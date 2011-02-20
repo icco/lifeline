@@ -25,3 +25,6 @@ I want to keep this relatively abstract, but the goal is to organize my data, no
 
  * <http://dev.opera.com/articles/view/css-only-scrollable-timeline/>
  * <http://dustincurtis.com/about.html>
+ * <http://www.google.com/tenthbirthday/>
+ * <http://tutorialzine.com/2010/01/advanced-event-timeline-with-php-css-jquery/>
+ * <http://www.simile-widgets.org/timeline/>
