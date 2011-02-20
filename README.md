@@ -21,3 +21,7 @@ Things I plan on listing:
 
 I want to keep this relatively abstract, but the goal is to organize my data, not create something other people can use. I plan on having all of the data stored in JSON and in a single image folder.
 
+## Inspiration
+
+ * <http://dev.opera.com/articles/view/css-only-scrollable-timeline/>
+ * <http://dustincurtis.com/about.html>
