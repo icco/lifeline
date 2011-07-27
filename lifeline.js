@@ -31,6 +31,7 @@ window.addEvent('domready', function() {
       });
 
       release.adopt(new Element('h2', {html: ev.release}), img, changeUl);
+      release.addClass('clearfix');
       $('data').adopt(release);
    });
 });
