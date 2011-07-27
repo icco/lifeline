@@ -66,6 +66,13 @@ var data = [
       ]
    },
    {
+      "release" : "Nat Welch 0.4",
+      "year": 1992,
+      "changes" : [
+         "Started pre-school and Ellen Thatcher. Met Aaron Shaw, became good friends."
+      ]
+   },
+   {
       "release" : "Nat Welch 0.1",
       "year": 1989,
       "img": "img/1.jpg",
