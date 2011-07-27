@@ -18,13 +18,19 @@ var data = [
 ];
 
 window.addEvent('domready', function() {
-   ul = new Element('ul', {id: 'events'});
-
    data.each(function (ev) {
-      console.log(ev);
+      var release = new Element('div', {class: 'release'});
+      var img = null;
+      if (ev.img != "")
+         img = new Element('img', {src: ev.img});
 
-      ul.adopt(new Element('li', {html: ev.release}));
+      var changeUl = new Element('ul', {class: 'changelist'});
+
+      ev.changes.each(function(change) {
+         changeUl.adopt(new Element('li', {html: change}));
+      });
+
+      release.adopt(new Element('h2', {html: ev.release}), img, changeUl);
+      $('data').adopt(release);
    });
-
-   $('data').adopt(ul);
 });
