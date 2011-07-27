@@ -87,6 +87,21 @@ var data = [
       ]
    },
    {
+      "release" : "Nat Welch 1.3",
+      "year": 2001,
+      "changes" : [
+         "I started Middle School at Cupertino Middle School in Sunnyvale, CA.",
+         "Survived the Y2K bug and the transition into the new millenium."
+      ]
+   },
+   {
+      "release" : "Nat Welch 0.9",
+      "year": 1997,
+      "changes" : [
+         "My younger brother Travis was born on December 30th, 1996."
+      ]
+   },
+   {
       "release" : "Nat Welch 0.5",
       "year": 1993,
       "changes" : [
