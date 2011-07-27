@@ -14,6 +14,8 @@ var data = [
       "release" : "Nat Welch 2.3",
       "year": 2011,
       "changes" : [
+         "Spent my second summer living in SLO, this time at the house I had been living in since Spetember. I continued work at iFixit.com.",
+         "I visited Aaron Shaw in NYC, where he was interning for a financial company.",
       ]
    },
    {
