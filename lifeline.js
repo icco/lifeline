@@ -21,7 +21,8 @@ var data = [
       "year": 2010,
       "img" : "img/22.jpg",
       "changes" : [
-         "I started working at iFixit.com in April. Made a lot of awesome friends through the company."
+         "I started working at iFixit.com in April. Made a lot of awesome friends through the company.",
+         "Spent the summer living at 2058 Loomis St. Probably one of my best summers in college so far."
       ]
    },
    {
@@ -30,6 +31,7 @@ var data = [
       "changes" : [
          "Moved into my first off campus housing on Southwood Dr. in San Luis Obispo, CA.",
          "I attended <abbr title=\"Penny Arcade Expo\">PAX</abbr> in Seattle, Washington with three of my friends Mark Gius, Dave Dagget and Chris Harsch.",
+         "I interned for a second summer at Adobe, working again as a Quality Engineering Intern for the Dreamweaver team. I worked on a project called Web Widgets which ended up winning the community feature of the year award."
       ]
    },
    {
@@ -38,6 +40,7 @@ var data = [
       "changes" : [
          "Over the summer I traveled to China and visited Beijing, Shanghai, Xiao and ____.",
          "I attended <abbr title=\"Penny Arcade Expo\">PAX</abbr> in Seattle, Washington with my two friends Dave Dagget and Chris Harsch. We stayed with my wonderful cousin Becky and her husband Jeff.",
+         "I interned at Adobe as a Quality Engineering Intern for the Dreamweaver team. I helped deliver CS4 and commuted daily from Los Gatos to the SF offices.
       ]
    },
    {
@@ -46,7 +49,30 @@ var data = [
       "changes": [
          "I graduated highschool on June 9th, 2006 from Maria Carillo High School in Santa Rosa, CA.",
          "I attended BFD, an all day festival in Mountain View, CA, to celebrate with my friend Chris Harsch.",
-         "I started college at Cal Poly."
+         "I started college at Cal Poly.",
+         "My parents moved to 16201 Shannon Rd. in Los Gatos, CA.",
+         "I spent the summer working at Oljato as the Nature Director."
+      ]
+   },
+   {
+      "release" : "Nat Welch 1.8",
+      "year": 2005,
+      "changes" : [
+         "I worked for the Sonoma County Information Services Department while taking trigonometry at the Santa Rosa Junior College."
+      ]
+   },
+   {
+      "release" : "Nat Welch 1.7",
+      "year": 2005,
+      "changes" : [
+         "Worked as a Scoutcraft staff at Oljato over the Summer."
+      ]
+   },
+   {
+      "release" : "Nat Welch 1.6",
+      "year": 2004,
+      "changes" : [
+         "Worked as an SIR at Oljato over the Summer."
       ]
    },
    {
@@ -54,7 +80,8 @@ var data = [
       "year": 2003,
       "changes" : [
          "Moved into 3711 Skyfarm Rd. in Santa Rosa, CA.",
-         "Began High School at Maria Carillo High School."
+         "Began High School at Maria Carillo High School.",
+         "Worked as an SIR at Oljato over the Summer."
       ]
    },
    {
@@ -87,7 +114,6 @@ var data = [
       ]
    },
 ];
-
 
 // The actual javascript for the page.
 window.addEvent('domready', function() {
