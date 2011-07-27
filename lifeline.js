@@ -22,7 +22,7 @@ var data = [
       "img" : "img/22.jpg",
       "changes" : [
          "I started working at iFixit.com in April. Made a lot of awesome friends through the company.",
-         "Spent the summer living at 2058 Loomis St. Probably one of my best summers in college so far."
+         "Spent the summer living at 2058 Loomis St. Probably one of my best summers in college so far.",
       ]
    },
    {
@@ -31,7 +31,7 @@ var data = [
       "changes" : [
          "Moved into my first off campus housing on Southwood Dr. in San Luis Obispo, CA.",
          "I attended <abbr title=\"Penny Arcade Expo\">PAX</abbr> in Seattle, Washington with three of my friends Mark Gius, Dave Dagget and Chris Harsch.",
-         "I interned for a second summer at Adobe, working again as a Quality Engineering Intern for the Dreamweaver team. I worked on a project called Web Widgets which ended up winning the community feature of the year award."
+         "I interned for a second summer at Adobe, working again as a Quality Engineering Intern for the Dreamweaver team. I worked on a project called Web Widgets which ended up winning the community feature of the year award.",
       ]
    },
    {
@@ -40,7 +40,7 @@ var data = [
       "changes" : [
          "Over the summer I traveled to China and visited Beijing, Shanghai, Xiao and ____.",
          "I attended <abbr title=\"Penny Arcade Expo\">PAX</abbr> in Seattle, Washington with my two friends Dave Dagget and Chris Harsch. We stayed with my wonderful cousin Becky and her husband Jeff.",
-         "I interned at Adobe as a Quality Engineering Intern for the Dreamweaver team. I helped deliver CS4 and commuted daily from Los Gatos to the SF offices.
+         "I interned at Adobe as a Quality Engineering Intern for the Dreamweaver team. I helped deliver CS4 and commuted daily from Los Gatos to the SF offices.",
       ]
    },
    {
@@ -51,28 +51,28 @@ var data = [
          "I attended BFD, an all day festival in Mountain View, CA, to celebrate with my friend Chris Harsch.",
          "I started college at Cal Poly.",
          "My parents moved to 16201 Shannon Rd. in Los Gatos, CA.",
-         "I spent the summer working at Oljato as the Nature Director."
+         "I spent the summer working at Oljato as the Nature Director.",
       ]
    },
    {
       "release" : "Nat Welch 1.8",
       "year": 2005,
       "changes" : [
-         "I worked for the Sonoma County Information Services Department while taking trigonometry at the Santa Rosa Junior College."
+         "I worked for the Sonoma County Information Services Department while taking trigonometry at the Santa Rosa Junior College.",
       ]
    },
    {
       "release" : "Nat Welch 1.7",
       "year": 2005,
       "changes" : [
-         "Worked as a Scoutcraft staff at Oljato over the Summer."
+         "Worked as a Scoutcraft staff at Oljato over the Summer.",
       ]
    },
    {
       "release" : "Nat Welch 1.6",
       "year": 2004,
       "changes" : [
-         "Worked as an SIR at Oljato over the Summer."
+         "Worked as an SIR at Oljato over the Summer.",
       ]
    },
    {
@@ -81,7 +81,7 @@ var data = [
       "changes" : [
          "Moved into 3711 Skyfarm Rd. in Santa Rosa, CA.",
          "Began High School at Maria Carillo High School.",
-         "Worked as an SIR at Oljato over the Summer."
+         "Worked as an SIR at Oljato over the Summer.",
       ]
    },
    {
@@ -89,14 +89,14 @@ var data = [
       "year": 1993,
       "changes" : [
          "Moved into 1227 St. Matthew Way, Los Altos, CA.",
-         "Began Kindergarten at Montclaire Elementary School."
+         "Began Kindergarten at Montclaire Elementary School.",
       ]
    },
    {
       "release" : "Nat Welch 0.4",
       "year": 1992,
       "changes" : [
-         "Started pre-school and Ellen Thatcher. Met Aaron Shaw, became good friends."
+         "Started pre-school and Ellen Thatcher. Met Aaron Shaw, became good friends.",
       ]
    },
    {
@@ -110,7 +110,7 @@ var data = [
       "release" : "Nat Welch 0.0",
       "year": 1988,
       "changes" : [
-         "Project Init on Feburary 22nd, 1988. Initial maintainers Lydia Ann Dehn and David Cushman Welch. Birthed at Stanford Medical."
+         "Project Init on Feburary 22nd, 1988. Initial maintainers Lydia Ann Dehn and David Cushman Welch. Birthed at Stanford Medical.",
       ]
    },
 ];
