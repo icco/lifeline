@@ -3,9 +3,9 @@ var data = [
       "img": "img/235europe.jpg",
       "release": "Nat Welch 2.3.5-europe",
       "changes" : [
-         "Nat completed a one month trip to Europe.",
-         "Nat visited the UK, including the towns of London, Edinburgh, Glasgow, York and Harrogate.",
-         "Nat visited Paris, France."
+         "Nat completed a one month trip to Europe. During this trip he visited the UK, including the towns of London, Edinburgh, Glasgow, York and Harrogate. Nat also visited Paris, France on this trip.",
+         "Nat was hired by Punchd Labs Inc., which was subsequently acquired by Google.",
+         "Nat graduated College with a B.S. in Computer Science at the California Polytechnic State University in San Luis Obispo, California. He commenced on June 11th, 2011.",
       ],
    },
    {
@@ -30,7 +30,7 @@ window.addEvent('domready', function() {
          changeUl.adopt(new Element('li', {html: change}));
       });
 
-      release.adopt(new Element('h2', {html: ev.release}), img, changeUl);
+      release.adopt(img, new Element('h2', {html: ev.release}), changeUl);
       release.addClass('clearfix');
       $('data').adopt(release);
    });
