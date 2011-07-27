@@ -2,6 +2,11 @@ body {
    font-family: monospace;
 }
 
+abbr {
+   border-bottom: 0px dashed grey;
+   cursor: alias;
+}
+
 /**
  * Fix float problem.
  * http://www.positioniseverything.net/easyclearing.html
@@ -39,4 +44,3 @@ body {
    padding: 2px;
    margin: 8px;
 }
-
