@@ -1,11 +1,19 @@
 var data = [
    {
+      "release": "Nat Welch 2.4",
+      "year": 2012,
+      "changes" : [
+        "I continued to work for Google in the Commerce Group.",
+        "I visited St. Luis, Missouri for the Strange Loop conference.",
+      ],
+   },
+   {
       "release": "Nat Welch 2.3.5-europe",
       "img": "img/235europe.jpg",
       "year": 2011,
       "changes" : [
          "I completed a one month trip to Europe. During this trip I visited the UK, including the towns of London, Edinburgh, Glasgow, York and Harrogate. I also visited Paris, France on this trip and was able to meet up with both my Family and Shawn Tice while traveling.",
-         "I was hired by Punchd Labs Inc., which was subsequently acquired by Google. I start working at Google on August 8th.",
+         "I was hired by Punchd Labs Inc., which was subsequently acquired by Google. I started working at Google on August 8th.",
          "I graduated College with a B.S. in Computer Science at the California Polytechnic State University in San Luis Obispo, California. I commenced on June 11th, 2011.",
          "I quit working for iFixit.com after two years in April. This was a tough choice, but am looking forward to the future.",
       ],
