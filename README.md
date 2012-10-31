@@ -15,3 +15,11 @@ I eventually want this hosted at [life.natwelch.com](http://life.natwelch.com).
  * <http://en.wikipedia.org/wiki/Changelog>
  * <http://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html>
  * <https://github.com/Gawen/life>
+
+## TODO
+
+ * Put link to code in footer
+ * Add a photo for every year
+ * Fix some spelling errors
+ * order existing bullet points by date
+ * Add missing years
