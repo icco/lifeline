@@ -153,28 +153,27 @@ var data = [
 ];
 
 // The actual javascript for the page.
-window.addEvent('domready', function() {
-  data.each(function (ev) {
+$(document).ready(function() {
+  $.each(data, function (i, ev) {
     // Containing div for each release.
-    var release = new Element('div', {class: 'release'});
+    var release = $('<div/>', { "class": 'release' });
 
     // img code.
     var img = null;
     if (ev.img != "") {
-      var i = new Element('img', { src: ev.img });
-      img = new Element('a', { href: ev.img });
-      img.adopt(i);
+      img = $('<a/>', { href: ev.img });
+      $('<img/>', { src: ev.img }).appendTo(img);
     }
 
     // Unorded list of changes.
-    var changeUl = new Element('ul', {class: 'changelist'});
-    ev.changes.each(function(change) {
-      changeUl.adopt(new Element('li', {html: change}));
+    var changeUl = $('<ul/>', { "class": 'changelist' });
+    $.each(ev.changes, function(k, change) {
+      changeUl.append($('<li/>', { html: change }));
     });
 
     // Insert release into page.
-    release.adopt(img, new Element('h2', {html: ev.release}), changeUl);
+    release.append(img, $('<h2/>', {html: ev.release}), changeUl);
     release.addClass('clearfix');
-    $('data').adopt(release);
+    $('#data').append(release);
   });
 });
