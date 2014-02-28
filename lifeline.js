@@ -153,27 +153,56 @@ var data = [
 ];
 
 // The actual javascript for the page.
-$(document).ready(function() {
-  $.each(data, function (i, ev) {
+document.addEventListener('DOMContentLoaded', function() {
+  data.forEach(function(ev, i){
     // Containing div for each release.
-    var release = $('<div/>', { "class": 'release' });
+    var release = document.createElement('div');
+    var className = 'release';
+    if (release.classList) {
+        release.classList.add(className);
+    } else {
+        release.className += ' ' + className;
+    }
 
     // img code.
-    var img = null;
-    if (ev.img != "") {
-      img = $('<a/>', { href: ev.img });
-      $('<img/>', { src: ev.img }).appendTo(img);
+    var img, imga = null;
+    if (ev.img != undefined && ev.img != "") {
+      imga = document.createElement('a');
+      imga.setAttribute('href', ev.img);
+      img = document.createElement('img');
+      img.setAttribute('src', ev.img);
+      imga.appendChild(img);
     }
 
     // Unorded list of changes.
-    var changeUl = $('<ul/>', { "class": 'changelist' });
-    $.each(ev.changes, function(k, change) {
-      changeUl.append($('<li/>', { html: change }));
+    var changeUl = document.createElement('ul');
+    var className = 'changelist';
+    if (changeUl.classList) {
+        changeUl.classList.add(className);
+    } else {
+        changeUl.className += ' ' + className;
+    }
+
+    ev.changes.forEach(function(change, k) {
+      var li = document.createElement('li');
+      li.innerHTML = change;
+      changeUl.appendChild(li);
     });
 
     // Insert release into page.
-    release.append(img, $('<h2/>', {html: ev.release}), changeUl);
-    release.addClass('clearfix');
-    $('#data').append(release);
+    var h2 = document.createElement('h2');
+    className = 'clearfix';
+    h2.innerHTML = ev.release;
+    if (imga != null) {
+      release.appendChild(imga);
+    }
+    release.appendChild(h2);
+    release.appendChild(changeUl);
+    if (release.classList) {
+        release.classList.add(className);
+    } else {
+        release.className += ' ' + className;
+    }
+    document.getElementById('data').appendChild(release);
   });
 });
