@@ -1,0 +1,2 @@
+local:
+	python -m SimpleHTTPServer
