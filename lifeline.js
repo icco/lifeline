@@ -1,9 +1,19 @@
 var data = [
   {
+    "release": "Nat Welch 2.6",
+    "year": 2014,
+    "img": "img/26.jpg",
+    "changes" : [
+      "I to work for Google on Google Compute Engine as a Software Reliability Engineer.",
+      "I moved to London.",
+      "I dated one woman.",
+    ],
+  },
+  {
     "release": "Nat Welch 2.5",
     "year": 2013,
     "changes" : [
-      "I to work for Google, but have changed jobs to work on Google Compute Engine and Google Cloud Storage as a Software Reliability Engineer.",
+      "I continue to work for Google, but have changed jobs to work on Google Compute Engine and Google Cloud Storage as a Software Reliability Engineer.",
       "I visited Missouri for in March 2012 to celebrate my grandmothers 90th birthday.",
       "I made multiple trips to Seattle for work, on which I usually visited Johnny Scout, Mark, Becky and Jeff.",
       "I attended Open Source Bridge in Portland.",
@@ -14,9 +24,11 @@ var data = [
   {
     "release": "Nat Welch 2.4",
     "year": 2012,
+    "img": "img/24.jpg",
     "changes" : [
       "I continued to work for Google in the Commerce Group.",
       "I visited St. Luis, Missouri for the Strange Loop conference.",
+      "I attended Burning Man for the first time.",
     ],
   },
   {
