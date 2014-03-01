@@ -44,6 +44,7 @@ var data = [
   },
   {
     "release" : "Nat Welch 2.3",
+    "img": "img/23.jpg",
     "year": 2011,
     "changes" : [
       "Spent my second summer living in SLO, this time at the house I had been living in since Spetember. I continued work at iFixit.com.",
@@ -61,6 +62,7 @@ var data = [
   },
   {
     "release" : "Nat Welch 2.1",
+    "img": "img/21.jpg",
     "year": 2009,
     "changes" : [
       "Moved into my first off campus housing on Southwood Dr. in San Luis Obispo, CA.",
