@@ -4,7 +4,7 @@ var data = [
     "year": 2014,
     "img": "img/26.jpg",
     "changes" : [
-      "I to work for Google on Google Compute Engine as a Software Reliability Engineer.",
+      "I continue to work for Google on Google Compute Engine as a Software Reliability Engineer.",
       "I moved to London.",
       "I dated one woman.",
     ],
