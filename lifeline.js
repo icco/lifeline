@@ -6,7 +6,9 @@ var data = [
     "changes" : [
       "I continue to work for Google on Google Compute Engine as a Software Reliability Engineer.",
       "I completed one year living in a foreign country.",
-      "I visited seven countries since my previous birthday.",
+      "I visited seven countries (The Netherlands, UK, Japan, Italy, France, Germany, Switzerland) since my previous birthday.",
+      "I attended two weddings, one of which I was in.",
+      "I attended PAX again in Seattle.",
     ],
   },
   {
@@ -15,6 +17,7 @@ var data = [
     "img": "img/26.jpg",
     "changes" : [
       "I continue to work for Google on Google Compute Engine as a Software Reliability Engineer.",
+      "I attended PAX again in Seattle.",
       "I moved to London.",
       "I dated one woman.",
     ],
@@ -29,6 +32,7 @@ var data = [
       "I attended Open Source Bridge in Portland.",
       "I saw the third launch of Space X's Dragon at Cape Canaveral with Niket.",
       "I dated two women.",
+      "I attended Burning Man for the first time.",
     ],
   },
   {
@@ -38,7 +42,6 @@ var data = [
     "changes" : [
       "I continued to work for Google in the Commerce Group.",
       "I visited St. Luis, Missouri for the Strange Loop conference.",
-      "I attended Burning Man for the first time.",
     ],
   },
   {
