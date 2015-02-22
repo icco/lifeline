@@ -1,5 +1,15 @@
 var data = [
   {
+    "release": "Nat Welch 2.7",
+    "year": 2015,
+    "img": "img/27.jpg",
+    "changes" : [
+      "I continue to work for Google on Google Compute Engine as a Software Reliability Engineer.",
+      "I completed one year living in a foreign country.",
+      "I visited seven countries since my previous birthday.",
+    ],
+  },
+  {
     "release": "Nat Welch 2.6",
     "year": 2014,
     "img": "img/26.jpg",
