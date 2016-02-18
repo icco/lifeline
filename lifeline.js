@@ -11,7 +11,7 @@ var data = [
       "I joined the Hillary For America Campaign.",
       "I attended one wedding and one funeral.",
       "I attended PAX again in Seattle.",
-      "I dated two women."
+      "I dated two women.",
       "Visited Portland, Urbana and Vancouver",
     ],
   },
