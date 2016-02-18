@@ -1,5 +1,20 @@
 var data = [
   {
+    "release": "Nat Welch 2.8",
+    "year": 2016,
+    "img": "img/28.jpg",
+    "changes" : [
+      "Quit job at Google",
+      "Attended the Recurse Center for three months",
+      "Joined LittleBits",
+      "Left LittleBits",
+      "Joined the Hillary For America Campaign",
+      "I attended one wedding and one funeral.",
+      "I attended PAX again in Seattle.",
+      "Visited Portland, Urbana and Vancouver",
+    ],
+  },
+  {
     "release": "Nat Welch 2.7",
     "year": 2015,
     "img": "img/27.jpg",
