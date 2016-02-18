@@ -41,6 +41,7 @@ var data = [
   {
     "release": "Nat Welch 2.5",
     "year": 2013,
+    "img": "img/25.jpg",
     "changes" : [
       "I continue to work for Google, but have changed jobs to work on Google Compute Engine and Google Cloud Storage as a Software Reliability Engineer.",
       "I visited Missouri for in March 2012 to celebrate my grandmothers 90th birthday.",
