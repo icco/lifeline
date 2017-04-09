@@ -1,5 +1,16 @@
 var data = [
   {
+    "release": "Nat Welch 2.9",
+    "year": 2017,
+    "img": "img/29.jpg",
+    "changes" : [
+      "Continued living in Brooklyn.",
+      "Visited Portland, DC, Seattle, Victoria, Montreal and Vancouver.",
+      "Worked at Hillary for America.",
+      "Dated two women."
+    ],
+  },
+  {
     "release": "Nat Welch 2.8",
     "year": 2016,
     "img": "img/28.jpg",
@@ -12,7 +23,7 @@ var data = [
       "I attended one wedding and one funeral.",
       "I attended PAX again in Seattle.",
       "I dated two women.",
-      "Visited Portland, Urbana and Vancouver",
+      "Visited Portland, Urbana and Vancouver.",
     ],
   },
   {
