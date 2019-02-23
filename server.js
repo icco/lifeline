@@ -16,8 +16,6 @@ app.prepare().then(() => {
     return "ok"
   })
 
-  server.use(helmet())
-
   server.get('*', (req, res) => {
     return handle(req, res)
   })
