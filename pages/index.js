@@ -1,7 +1,13 @@
 import Head from "next/head";
+
 import Year from "../components/Year";
+import data from "../static/data.json";
 
 function Home() {
+  let years = data.map(log => {
+    return <Year key={log.release} {...log} />;
+  });
+
   return (
     <div>
       <Head>
@@ -40,7 +46,7 @@ function Home() {
         </p>
       </div>
 
-      <div />
+      {years}
     </div>
   );
 }
