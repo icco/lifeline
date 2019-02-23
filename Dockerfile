@@ -1,6 +1,5 @@
-FROM nginx:latest
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-WORKDIR /usr/share/nginx/html
+FROM node:10
+EXPOSE 8080
 COPY . .
 RUN ls -alh
-EXPOSE 8080
+CMD npm run start
