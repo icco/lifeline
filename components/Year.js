@@ -4,8 +4,10 @@ const Year = data => {
   let img_data = "";
   if (img !== undefined) {
     img_data = (
-      <a href={"/static/" + img}>
-        <img src={"/static/" + img} />
+      <a class="db pv4 ph3 ph0-l no-underline black dim" href={"/static/" + img}>
+        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns">
+          <img className="db" src={"/static/" + img} />
+        </div>
       </a>
     );
   }
@@ -15,13 +17,15 @@ const Year = data => {
   });
 
   return (
-    <section className="mw8 center">
-      {img_data}
-
-      <h2>
+    <section className="cf mv2 hidden ba b--black-10 mv4">
+      <h2 className="f4 bg-near-white br3 br--top black-60 mv0 pv2 ph3">
         {release} - {year}
       </h2>
-      <ul>{change_data}</ul>
+      <div className="pa3 bt b--black-10">
+      {img_data}
+
+        <ul className="f6 f5-ns lh-copy measure">{change_data}</ul>
+      </div>
     </section>
   );
 };

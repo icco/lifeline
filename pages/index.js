@@ -3,22 +3,21 @@ import Head from "next/head";
 import Year from "../components/Year";
 import data from "../static/data.json";
 
+import '../tachyons.css'
+
 function Home() {
   let years = data.map(log => {
     return <Year key={log.release} {...log} />;
   });
 
   return (
-    <div>
+    <div className="code mw7 center pa3">
       <Head>
         <title>Nat's Lifeline</title>
       </Head>
-      <div>
-        <h1>
-          Nat Welch:
-          <br />
-          CHANGELOG.TXT
-        </h1>
+      <section>
+        <h1>Nat Welch</h1>
+        <h2>CHANGELOG.TXT</h2>
         <p>
           Starting in 2011, I decided to create a changelog for my life. For
           those of you in the software world, this may make total sense, but for
@@ -44,7 +43,7 @@ function Home() {
           <br />
           /Nat
         </p>
-      </div>
+      </section>
 
       {years}
     </div>
