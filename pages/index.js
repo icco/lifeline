@@ -3,7 +3,7 @@ import Head from "next/head";
 import Year from "../components/Year";
 import data from "../static/data.json";
 
-import '../tachyons.css'
+import "../tachyons.css";
 
 function Home() {
   let years = data.map(log => {

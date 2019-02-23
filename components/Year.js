@@ -4,11 +4,11 @@ const Year = data => {
   let img_data = "";
   if (img !== undefined) {
     img_data = (
-        <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns dim">
-          <a class="no-underline" href={"/static/" + img}>
-            <img className="db" src={"/static/" + img} />
-          </a>
-        </div>
+      <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns dim">
+        <a class="no-underline" href={"/static/" + img}>
+          <img className="db" src={"/static/" + img} />
+        </a>
+      </div>
     );
   }
 
