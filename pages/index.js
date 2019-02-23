@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Year from '../components/Year'
 
 function Home() {
   return (
