@@ -1,5 +1,28 @@
 var data = [
   {
+    "release": "Nat Welch 3.1",
+    "year": 2019,
+    "img": "img/31.jpg",
+    "changes" : [
+      "Continued living in Brooklyn.",
+      "Got married to Melissa.",
+      "Left First Look Media and returned to Google.",
+      "Published a book, Real World SRE!",
+      "Visited France, Atlanta, North Dakota, Ohio, San Francisco, Pittsburgh, Orlando, Seattle, and DC."
+    ],
+  },
+  {
+    "release": "Nat Welch 3.0",
+    "year": 2018,
+    "img": "img/30.jpg",
+    "changes" : [
+      "Continued living in Brooklyn.",
+      "Got engaged to Melissa.",
+      "Visited San Francisco, St. Louis, DC and Boston."
+      "Worked at First Look Media."
+    ],
+  },
+  {
     "release": "Nat Welch 2.9",
     "year": 2017,
     "img": "img/29.jpg",
