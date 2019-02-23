@@ -4,8 +4,8 @@ const Year = data => {
   let img_data = "";
   if (img !== undefined) {
     img_data = (
-      <div class="pr3-ns mb4 mb0-ns w-100 w-40-ns dim">
-        <a class="no-underline" href={"/static/" + img}>
+      <div className="pr3-ns mb4 mb0-ns w-100 w-40-ns dim">
+        <a className="no-underline" href={"/static/" + img}>
           <img className="db" src={"/static/" + img} />
         </a>
       </div>
@@ -21,7 +21,7 @@ const Year = data => {
       <div className="flex flex-column flex-row-ns">
         {img_data}
 
-        <div class="w-100 w-60-ns pl3-ns">
+        <div className="w-100 w-60-ns pl3-ns">
           <h2 className="f3 fw1 mt0 lh-title">
             {release} - {year}
           </h2>
