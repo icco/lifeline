@@ -1,5 +1,10 @@
 FROM node:10
-EXPOSE 8080
+WORKDIR /usr/src/app
+COPY package.json yarn.lock ./
+RUN yarn install
+
 COPY . .
 RUN yarn run build
-CMD yarn run start -p 8080
+
+ENV PORT 8080
+CMD yarn run start -p $PORT
