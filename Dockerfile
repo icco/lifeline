@@ -7,4 +7,4 @@ COPY . .
 RUN yarn run build
 
 ENV PORT 8080
-CMD yarn run start -p $PORT
+CMD yarn run start
