@@ -13,11 +13,18 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@opencensus/core": "^0.0.9",
+    "@opencensus/exporter-stackdriver": "^0.0.9",
+    "@opencensus/nodejs": "^0.0.9",
+    "@opencensus/propagation-stackdriver": "^0.0.9",
     "@zeit/next-css": "^1.0.1",
     "compression": "^1.7.3",
     "express": "^4.16.4",
     "helmet": "^3.15.1",
     "next": "^8.0.3",
+    "pino": "^5.11.1",
+    "pino-http": "^4.1.0",
+    "pino-stackdriver-serializers": "https://github.com/icco/pino-stackdriver-serializers",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
   },
