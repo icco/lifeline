@@ -5,9 +5,9 @@ const compression = require("compression");
 const pinoLogger = require("pino");
 const pinoMiddleware = require("pino-http");
 const pinoStackdriver = require("pino-stackdriver-serializers");
-const opencensus = require("@opencensus/core");
-const tracing = require("@opencensus/nodejs");
-const stackdriver = require("@opencensus/exporter-stackdriver");
+const { globalStats } = require('@opencensus/core');
+const tracing = require('@opencensus/nodejs');
+const { StackdriverTraceExporter, StackdriverStatsExporter } = require('@opencensus/exporter-stackdriver');
 const propagation = require("@opencensus/propagation-stackdriver");
 
 const port = parseInt(process.env.PORT, 10) || 8080;
@@ -26,14 +26,13 @@ const logger = pinoLogger({
 });
 
 if (process.env.ENABLE_STACKDRIVER) {
-  const stats = new opencensus.Stats();
-  const sse = new stackdriver.StackdriverStatsExporter({
+  const sse = new StackdriverStatsExporter({
     projectId: GOOGLE_PROJECT
   });
-  stats.registerExporter(sse);
+  globalStats.registerExporter(sse);
 
   const sp = propagation.v1;
-  const ste = new stackdriver.StackdriverTraceExporter({
+  const ste = new StackdriverTraceExporter({
     projectId: GOOGLE_PROJECT
   });
   const tracer = tracing.start({
