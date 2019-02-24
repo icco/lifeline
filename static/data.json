@@ -1,43 +1,43 @@
-var data = [
+[
   {
     "release": "Nat Welch 3.1",
     "year": 2019,
     "img": "img/31.jpg",
-    "changes" : [
+    "changes": [
       "Continued living in Brooklyn.",
       "Got married to Melissa.",
       "Left First Look Media and returned to Google.",
       "Published a book, Real World SRE!",
       "Visited France, Atlanta, North Dakota, Ohio, San Francisco, Pittsburgh, Orlando, Seattle, and DC."
-    ],
+    ]
   },
   {
     "release": "Nat Welch 3.0",
     "year": 2018,
     "img": "img/30.jpg",
-    "changes" : [
+    "changes": [
       "Continued living in Brooklyn.",
       "Got engaged to Melissa.",
-      "Visited San Francisco, St. Louis, DC and Boston."
+      "Visited San Francisco, St. Louis, DC and Boston.",
       "Worked at First Look Media."
-    ],
+    ]
   },
   {
     "release": "Nat Welch 2.9",
     "year": 2017,
     "img": "img/29.jpg",
-    "changes" : [
+    "changes": [
       "Continued living in Brooklyn.",
       "Visited Portland, DC, Seattle, Victoria, Montreal and Vancouver.",
       "Worked at Hillary for America.",
       "Dated two women."
-    ],
+    ]
   },
   {
     "release": "Nat Welch 2.8",
     "year": 2016,
     "img": "img/28.jpg",
-    "changes" : [
+    "changes": [
       "I quit my job at Google.",
       "I attended the Recurse Center for three months.",
       "I joined littleBits.",
@@ -46,101 +46,101 @@ var data = [
       "I attended one wedding and one funeral.",
       "I attended PAX again in Seattle.",
       "I dated two women.",
-      "Visited Portland, Urbana and Vancouver.",
-    ],
+      "Visited Portland, Urbana and Vancouver."
+    ]
   },
   {
     "release": "Nat Welch 2.7",
     "year": 2015,
     "img": "img/27.jpg",
-    "changes" : [
+    "changes": [
       "I continue to work for Google on Google Compute Engine as a Software Reliability Engineer.",
       "I completed one year living in a foreign country.",
       "I visited seven countries (The Netherlands, UK, Japan, Italy, France, Germany, Switzerland) since my previous birthday.",
       "I attended two weddings, one of which I was in.",
-      "I attended PAX again in Seattle.",
-    ],
+      "I attended PAX again in Seattle."
+    ]
   },
   {
     "release": "Nat Welch 2.6",
     "year": 2014,
     "img": "img/26.jpg",
-    "changes" : [
+    "changes": [
       "I continue to work for Google on Google Compute Engine as a Software Reliability Engineer.",
       "I attended PAX again in Seattle.",
       "I moved to London.",
-      "I dated one woman.",
-    ],
+      "I dated one woman."
+    ]
   },
   {
     "release": "Nat Welch 2.5",
     "year": 2013,
     "img": "img/25.jpg",
-    "changes" : [
+    "changes": [
       "I continue to work for Google, but have changed jobs to work on Google Compute Engine and Google Cloud Storage as a Software Reliability Engineer.",
       "I visited Missouri for in March 2012 to celebrate my grandmothers 90th birthday.",
       "I made multiple trips to Seattle for work, on which I usually visited Johnny Scout, Mark, Becky and Jeff.",
       "I attended Open Source Bridge in Portland.",
       "I saw the third launch of Space X's Dragon at Cape Canaveral with Niket.",
       "I dated two women.",
-      "I attended Burning Man for the first time.",
-    ],
+      "I attended Burning Man for the first time."
+    ]
   },
   {
     "release": "Nat Welch 2.4",
     "year": 2012,
     "img": "img/24.jpg",
-    "changes" : [
+    "changes": [
       "I continued to work for Google in the Commerce Group.",
-      "I visited St. Luis, Missouri for the Strange Loop conference.",
-    ],
+      "I visited St. Luis, Missouri for the Strange Loop conference."
+    ]
   },
   {
     "release": "Nat Welch 2.3.5-europe",
     "img": "img/23.5.europe.jpg",
     "year": 2011,
-    "changes" : [
+    "changes": [
       "I completed a one month trip to Europe. During this trip I visited the UK, including the towns of London, Edinburgh, Glasgow, York and Harrogate. I also visited Paris, France on this trip and was able to meet up with both my Family and Shawn Tice while traveling.",
       "I was hired by Punchd Labs Inc., which was subsequently acquired by Google. I started working at Google on August 8th.",
       "I graduated College with a B.S. in Computer Science at the California Polytechnic State University in San Luis Obispo, California. I commenced on June 11th, 2011.",
-      "I quit working for iFixit.com after two years in April. This was a tough choice, but am looking forward to the future.",
-    ],
+      "I quit working for iFixit.com after two years in April. This was a tough choice, but am looking forward to the future."
+    ]
   },
   {
-    "release" : "Nat Welch 2.3",
+    "release": "Nat Welch 2.3",
     "img": "img/23.jpg",
     "year": 2011,
-    "changes" : [
+    "changes": [
       "Spent my second summer living in SLO, this time at the house I had been living in since Spetember. I continued work at iFixit.com.",
-      "I visited Aaron Shaw in NYC, where he was interning for a financial company.",
+      "I visited Aaron Shaw in NYC, where he was interning for a financial company."
     ]
   },
   {
-    "release" : "Nat Welch 2.2",
+    "release": "Nat Welch 2.2",
     "year": 2010,
-    "img" : "img/22.jpg",
-    "changes" : [
+    "img": "img/22.jpg",
+    "changes": [
       "I started working at iFixit.com in April. Made a lot of awesome friends through the company.",
-      "Spent the summer living at 2058 Loomis St. Probably one of my best summers in college so far.",
+      "Spent the summer living at 2058 Loomis St. Probably one of my best summers in college so far."
     ]
   },
   {
-    "release" : "Nat Welch 2.1",
+    "release": "Nat Welch 2.1",
     "img": "img/21.jpg",
     "year": 2009,
-    "changes" : [
+    "changes": [
       "Moved into my first off campus housing on Southwood Dr. in San Luis Obispo, CA.",
       "I attended <abbr title=\"Penny Arcade Expo\">PAX</abbr> in Seattle, Washington with three of my friends Mark Gius, Dave Dagget and Chris Harsch.",
-      "I interned for a second summer at Adobe, working again as a Quality Engineering Intern for the Dreamweaver team. I worked on a project called Web Widgets which ended up winning the community feature of the year award.",
+      "I interned for a second summer at Adobe, working again as a Quality Engineering Intern for the Dreamweaver team. I worked on a project called Web Widgets which ended up winning the community feature of the year award."
     ]
   },
   {
-    "release" : "Nat Welch 2.0",
+    "release": "Nat Welch 2.0",
     "year": 2008,
-    "changes" : [
-      "Over the summer I traveled to China and visited Beijing, Shanghai, Xiao and ____.",
+    "changes": [
+      "Over the summer I traveled to China and visited Beijing, Shanghai, Xi'an and Yangshuo.",
       "I attended <abbr title=\"Penny Arcade Expo\">PAX</abbr> in Seattle, Washington with my two friends Dave Dagget and Chris Harsch. We stayed with my wonderful cousin Becky and her husband Jeff.",
-      "I interned at Adobe as a Quality Engineering Intern for the Dreamweaver team. I helped deliver CS4 and commuted daily from Los Gatos to the SF offices.",
+      "I interned at Adobe as a Quality Engineering Intern for the Dreamweaver team. I helped deliver CS4 and commuted daily from Los Gatos to the SF offices."
     ]
   },
   {
@@ -151,136 +151,74 @@ var data = [
       "I attended BFD, an all day festival in Mountain View, CA, to celebrate with my friend Chris Harsch.",
       "I started college at Cal Poly.",
       "My parents moved to 16201 Shannon Rd. in Los Gatos, CA.",
-      "I spent the summer working at Oljato as the Nature Director.",
+      "I spent the summer working at Oljato as the Nature Director."
     ]
   },
   {
-    "release" : "Nat Welch 1.8",
+    "release": "Nat Welch 1.8",
     "year": 2005,
-    "changes" : [
-      "I worked for the Sonoma County Information Services Department while taking trigonometry at the Santa Rosa Junior College.",
+    "changes": [
+      "I worked for the Sonoma County Information Services Department while taking trigonometry at the Santa Rosa Junior College."
     ]
   },
   {
-    "release" : "Nat Welch 1.7",
+    "release": "Nat Welch 1.7",
     "year": 2005,
-    "changes" : [
-      "Worked as a Scoutcraft staff at Oljato over the Summer.",
-    ]
+    "changes": ["Worked as a Scoutcraft staff at Oljato over the Summer."]
   },
   {
-    "release" : "Nat Welch 1.6",
+    "release": "Nat Welch 1.6",
     "year": 2004,
-    "changes" : [
-      "Worked as an SIR at Oljato over the Summer.",
-    ]
+    "changes": ["Worked as an SIR at Oljato over the Summer."]
   },
   {
-    "release" : "Nat Welch 1.5",
+    "release": "Nat Welch 1.5",
     "year": 2003,
-    "changes" : [
+    "changes": [
       "Moved into 3711 Skyfarm Rd. in Santa Rosa, CA.",
       "Began High School at Maria Carillo High School.",
-      "Worked as an SIR at Oljato over the Summer.",
+      "Worked as an SIR at Oljato over the Summer."
     ]
   },
   {
-    "release" : "Nat Welch 1.3",
+    "release": "Nat Welch 1.3",
     "year": 2001,
-    "changes" : [
+    "changes": [
       "I started Middle School at Cupertino Middle School in Sunnyvale, CA.",
       "Survived the Y2K bug and the transition into the new millenium."
     ]
   },
   {
-    "release" : "Nat Welch 0.9",
+    "release": "Nat Welch 0.9",
     "year": 1997,
-    "changes" : [
-      "My younger brother Travis was born on December 30th, 1996."
-    ]
+    "changes": ["My younger brother Travis was born on December 30th, 1996."]
   },
   {
-    "release" : "Nat Welch 0.5",
+    "release": "Nat Welch 0.5",
     "year": 1993,
-    "changes" : [
+    "changes": [
       "Moved into 1227 St. Matthew Way, Los Altos, CA.",
-      "Began Kindergarten at Montclaire Elementary School.",
+      "Began Kindergarten at Montclaire Elementary School."
     ]
   },
   {
-    "release" : "Nat Welch 0.4",
+    "release": "Nat Welch 0.4",
     "year": 1992,
-    "changes" : [
-      "Started pre-school and Ellen Thatcher. Met Aaron Shaw and Paul Morrill, became good friends.",
+    "changes": [
+      "Started pre-school and Ellen Thatcher. Met Aaron Shaw and Paul Morrill, became good friends."
     ]
   },
   {
-    "release" : "Nat Welch 0.1",
+    "release": "Nat Welch 0.1",
     "year": 1989,
     "img": "img/1.jpg",
-    "changes" : [
-    ]
+    "changes": []
   },
   {
-    "release" : "Nat Welch 0.0",
+    "release": "Nat Welch 0.0",
     "year": 1988,
-    "changes" : [
-      "Project Init on Feburary 22nd, 1988. Initial maintainers Lydia Ann Dehn and David Cushman Welch. Birthed at Stanford Medical.",
+    "changes": [
+      "Project Init on Feburary 22nd, 1988. Initial maintainers Lydia Ann Dehn and David Cushman Welch. Birthed at Stanford Medical."
     ]
-  },
-];
-
-// The actual javascript for the page.
-document.addEventListener('DOMContentLoaded', function() {
-  data.forEach(function(ev, i){
-    // Containing div for each release.
-    var release = document.createElement('div');
-    var className = 'release';
-    if (release.classList) {
-        release.classList.add(className);
-    } else {
-        release.className += ' ' + className;
-    }
-
-    // img code.
-    var img, imga = null;
-    if (ev.img != undefined && ev.img != "") {
-      imga = document.createElement('a');
-      imga.setAttribute('href', ev.img);
-      img = document.createElement('img');
-      img.setAttribute('src', ev.img);
-      imga.appendChild(img);
-    }
-
-    // Unorded list of changes.
-    var changeUl = document.createElement('ul');
-    var className = 'changelist';
-    if (changeUl.classList) {
-        changeUl.classList.add(className);
-    } else {
-        changeUl.className += ' ' + className;
-    }
-
-    ev.changes.forEach(function(change, k) {
-      var li = document.createElement('li');
-      li.innerHTML = change;
-      changeUl.appendChild(li);
-    });
-
-    // Insert release into page.
-    var h2 = document.createElement('h2');
-    className = 'clearfix';
-    h2.innerHTML = ev.release;
-    if (imga != null) {
-      release.appendChild(imga);
-    }
-    release.appendChild(h2);
-    release.appendChild(changeUl);
-    if (release.classList) {
-        release.classList.add(className);
-    } else {
-        release.className += ' ' + className;
-    }
-    document.getElementById('data').appendChild(release);
-  });
-});
+  }
+]

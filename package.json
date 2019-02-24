@@ -1,0 +1,27 @@
+{
+  "name": "life",
+  "version": "1.0.0",
+  "description": "A changelog of my life",
+  "main": "index.js",
+  "repository": "git@github.com:icco/lifeline.git",
+  "author": "Nat Welch <nat@natwelch.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
+  },
+  "dependencies": {
+    "@zeit/next-css": "^1.0.1",
+    "compression": "^1.7.3",
+    "express": "^4.16.4",
+    "helmet": "^3.15.1",
+    "next": "^8.0.3",
+    "react": "^16.8.3",
+    "react-dom": "^16.8.3"
+  },
+  "devDependencies": {
+    "prettier": "1.16.4"
+  }
+}
