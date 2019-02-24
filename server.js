@@ -5,11 +5,15 @@ const compression = require("compression");
 const pinoLogger = require("pino");
 const pinoMiddleware = require("pino-http");
 const pinoStackdriver = require("pino-stackdriver-serializers");
-const { globalStats } = require('@opencensus/core');
-const tracing = require('@opencensus/nodejs');
-const { StackdriverTraceExporter, StackdriverStatsExporter } = require('@opencensus/exporter-stackdriver');
+const { globalStats } = require("@opencensus/core");
+const tracing = require("@opencensus/nodejs");
+const {
+  StackdriverTraceExporter,
+  StackdriverStatsExporter
+} = require("@opencensus/exporter-stackdriver");
 const propagation = require("@opencensus/propagation-stackdriver");
 
+const GOOGLE_PROJECT = "icco-cloud";
 const port = parseInt(process.env.PORT, 10) || 8080;
 const dev = process.env.NODE_ENV !== "production";
 const app = next({ dev });
