@@ -13,6 +13,7 @@ function Home() {
   return (
     <div className="code mw7 center pa3">
       <Head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Nat's Lifeline</title>
       </Head>
       <section>
