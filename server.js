@@ -18,7 +18,6 @@ const {
   NELMiddleware,
   ReportToMiddleware
 } = require("@icco/react-common");
-const pinoMiddleware = require("pino-http");
 
 const GOOGLE_PROJECT = "icco-cloud";
 const port = parseInt(process.env.PORT, 10) || 8080;

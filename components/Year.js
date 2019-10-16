@@ -13,7 +13,7 @@ const Year = data => {
   }
 
   let change_data = changes.map((change, i) => {
-    return <li key={i} dangerouslySetInnerHTML={change} />;
+    return <li key={i} dangerouslySetInnerHTML={{__html: change}} />;
   });
 
   return (
