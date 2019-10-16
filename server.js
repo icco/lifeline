@@ -71,7 +71,7 @@ app.prepare().then(() => {
   );
 
   server.use(NELMiddleware());
-  server.use(ReportToMiddleware("writing"));
+  server.use(ReportToMiddleware("life"));
 
   server.use(helmet());
 
