@@ -63,7 +63,7 @@ app.prepare().then(() => {
   const server = express();
   server.set("trust proxy", true);
   server.use(compression());
-  server.use( pinoMiddleware({ logger }));
+  server.use(pinoMiddleware({ logger }));
   server.use(NELMiddleware());
   server.use(ReportToMiddleware("life"));
   server.use(helmet());
@@ -75,25 +75,15 @@ app.prepare().then(() => {
     helmet.contentSecurityPolicy({
       directives: {
         upgradeInsecureRequests: true,
-        defaultSrc: [
-          "'self'",
-          "https://graphql.natwelch.com/graphql",
-        ],
+        defaultSrc: ["'self'", "https://graphql.natwelch.com/graphql"],
         styleSrc: [
           "'self'",
           "'unsafe-inline'",
           "https://fonts.googleapis.com/"
         ],
         fontSrc: ["https://fonts.gstatic.com"],
-        imgSrc: [
-          "'self'",
-          "https://a.natwelch.com",
-          "https://icco.imgix.net",
-        ],
-        scriptSrc: [
-          "'self'",
-          "'unsafe-eval'",
-        ],
+        imgSrc: ["'self'", "https://a.natwelch.com", "https://icco.imgix.net"],
+        scriptSrc: ["'self'", "'unsafe-eval'"],
         objectSrc: ["'none'"],
         reportUri: "https://reportd.natwelch.com/report/life",
         reportTo: "default"
