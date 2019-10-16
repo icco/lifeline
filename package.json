@@ -27,7 +27,8 @@
     "pino-http": "^4.3.0",
     "pino-stackdriver-serializers": "https://github.com/icco/pino-stackdriver-serializers",
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react-dom": "^16.8.3",
+    "set-value": "^3.0.1"
   },
   "devDependencies": {
     "prettier": "1.16.4"
