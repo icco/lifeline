@@ -16,7 +16,7 @@ const propagation = require("@opencensus/propagation-stackdriver");
 const {
   SSLMiddleware,
   NELMiddleware,
-  ReportToMiddleware,
+  ReportToMiddleware
 } = require("@icco/react-common");
 const pinoMiddleware = require("pino-http");
 
@@ -63,74 +63,73 @@ if (process.env.ENABLE_STACKDRIVER) {
 app.prepare().then(() => {
   const server = express();
   server.use(compression());
-      server.set("trust proxy", true);
+  server.set("trust proxy", true);
 
-      server.use(
-        pinoMiddleware({
-          logger,
-        })
-      );
+  server.use(
+    pinoMiddleware({
+      logger
+    })
+  );
 
-      server.use(NELMiddleware());
-      server.use(ReportToMiddleware("writing"));
+  server.use(NELMiddleware());
+  server.use(ReportToMiddleware("writing"));
 
-      server.use(helmet());
+  server.use(helmet());
 
-      server.use(
-        helmet.referrerPolicy({ policy: "strict-origin-when-cross-origin" })
-      );
+  server.use(
+    helmet.referrerPolicy({ policy: "strict-origin-when-cross-origin" })
+  );
 
-      server.use(
-        helmet.contentSecurityPolicy({
-          directives: {
-            upgradeInsecureRequests: true,
+  server.use(
+    helmet.contentSecurityPolicy({
+      directives: {
+        upgradeInsecureRequests: true,
 
-            //  default-src 'none'
-            defaultSrc: [
-              "'self'",
-              "https://graphql.natwelch.com/graphql",
-              "https://graphql.natwelch.com/photo/new",
-              "https://icco.auth0.com/.well-known/jwks.json",
-            ],
-            // style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/
-            styleSrc: [
-              "'self'",
-              "'unsafe-inline'",
-              "https://fonts.googleapis.com/",
-            ],
-            // font-src https://fonts.gstatic.com
-            fontSrc: ["https://fonts.gstatic.com"],
-            // img-src 'self' data: http://a.natwelch.com https://a.natwelch.com https://icco.imgix.net
-            imgSrc: [
-              "'self'",
-              "data:",
-              "https://a.natwelch.com",
-              "https://icco.imgix.net",
-              "https://storage.googleapis.com",
-              "https://writing.natwelch.com",
-            ],
-            // script-src 'self' 'unsafe-eval' 'unsafe-inline' http://a.natwelch.com/tracker.js https://a.natwelch.com/tracker.js
-            scriptSrc: [
-              "'self'",
-              "'unsafe-inline'",
-              "'unsafe-eval'",
-              "https://a.natwelch.com/tracker.js",
-            ],
-            // object-src 'none';
-            objectSrc: ["'none'"],
-            // https://developers.google.com/web/updates/2018/09/reportingapi#csp
-            reportUri: "https://reportd.natwelch.com/report/writing",
-            reportTo: "default",
-          },
-        })
-      );
+        //  default-src 'none'
+        defaultSrc: [
+          "'self'",
+          "https://graphql.natwelch.com/graphql",
+          "https://graphql.natwelch.com/photo/new",
+          "https://icco.auth0.com/.well-known/jwks.json"
+        ],
+        // style-src 'self' 'unsafe-inline' https://fonts.googleapis.com/
+        styleSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "https://fonts.googleapis.com/"
+        ],
+        // font-src https://fonts.gstatic.com
+        fontSrc: ["https://fonts.gstatic.com"],
+        // img-src 'self' data: http://a.natwelch.com https://a.natwelch.com https://icco.imgix.net
+        imgSrc: [
+          "'self'",
+          "data:",
+          "https://a.natwelch.com",
+          "https://icco.imgix.net",
+          "https://storage.googleapis.com",
+          "https://writing.natwelch.com"
+        ],
+        // script-src 'self' 'unsafe-eval' 'unsafe-inline' http://a.natwelch.com/tracker.js https://a.natwelch.com/tracker.js
+        scriptSrc: [
+          "'self'",
+          "'unsafe-inline'",
+          "'unsafe-eval'",
+          "https://a.natwelch.com/tracker.js"
+        ],
+        // object-src 'none';
+        objectSrc: ["'none'"],
+        // https://developers.google.com/web/updates/2018/09/reportingapi#csp
+        reportUri: "https://reportd.natwelch.com/report/writing",
+        reportTo: "default"
+      }
+    })
+  );
 
-      server.use(expectCt({ maxAge: 123 }));
+  server.use(expectCt({ maxAge: 123 }));
 
-      server.use(compression());
+  server.use(compression());
 
-      server.use(SSLMiddleware());
-
+  server.use(SSLMiddleware());
 
   server.get("/healthz", (req, res) => {
     return "ok";
