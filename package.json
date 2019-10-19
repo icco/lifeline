@@ -13,10 +13,10 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
-    "@opencensus/core": "^0.0.9",
-    "@opencensus/exporter-stackdriver": "^0.0.9",
-    "@opencensus/nodejs": "^0.0.9",
-    "@opencensus/propagation-stackdriver": "^0.0.9",
+    "@opencensus/core": "^0.0.18",
+    "@opencensus/exporter-stackdriver": "^0.0.18",
+    "@opencensus/nodejs": "^0.0.18",
+    "@opencensus/propagation-stackdriver": "^0.0.18",
     "@zeit/next-css": "^1.0.1",
     "compression": "^1.7.3",
     "express": "^4.16.4",
