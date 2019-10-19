@@ -13,6 +13,7 @@
     "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
+    "@icco/react-common": "^2019.10.4-1",
     "@opencensus/core": "^0.0.18",
     "@opencensus/exporter-stackdriver": "^0.0.18",
     "@opencensus/nodejs": "^0.0.18",
@@ -22,8 +23,8 @@
     "express": "^4.16.4",
     "helmet": "^3.15.1",
     "next": "^8.0.3",
-    "pino": "^5.11.1",
-    "pino-http": "^4.1.0",
+    "pino": "^5.13.5",
+    "pino-http": "^4.3.0",
     "pino-stackdriver-serializers": "https://github.com/icco/pino-stackdriver-serializers",
     "react": "^16.8.3",
     "react-dom": "^16.8.3"
