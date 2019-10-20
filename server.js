@@ -98,7 +98,7 @@ app.prepare().then(() => {
     res.json({ status: "ok" });
   });
 
-  server.et("*", (req, res) => {
+  server.get("*", (req, res) => {
     handle(req, res);
     return
   });
