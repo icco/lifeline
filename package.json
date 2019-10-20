@@ -10,7 +10,7 @@
   "scripts": {
     "dev": "node server.js",
     "build": "next build",
-    "start": "NODE_ENV=production node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "@icco/react-common": "^2019.10.4-1",
@@ -27,7 +27,8 @@
     "pino-http": "^4.3.0",
     "pino-stackdriver-serializers": "https://github.com/icco/pino-stackdriver-serializers",
     "react": "^16.8.3",
-    "react-dom": "^16.8.3"
+    "react-dom": "^16.8.3",
+    "webpack": "^4.41.2"
   },
   "devDependencies": {
     "prettier": "1.16.4"
