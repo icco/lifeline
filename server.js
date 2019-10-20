@@ -95,11 +95,12 @@ app.prepare().then(() => {
   server.use(SSLMiddleware());
 
   server.get("/healthz", (req, res) => {
-    return "ok";
+    res.json({ status: "ok" });
   });
 
-  server.get("*", (req, res) => {
-    return handle(req, res);
+  server.et("*", (req, res) => {
+    handle(req, res);
+    return
   });
 
   server.listen(port, err => {
