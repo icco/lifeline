@@ -26,8 +26,8 @@
     "pino": "^5.13.5",
     "pino-http": "^4.3.0",
     "pino-stackdriver-serializers": "https://github.com/icco/pino-stackdriver-serializers",
-    "react": "^16.8.3",
-    "react-dom": "^16.8.3",
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
     "webpack": "^4.41.2"
   },
   "devDependencies": {
