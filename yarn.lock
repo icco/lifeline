@@ -1457,6 +1457,11 @@ atob@^2.1.1:
   resolved "https://registry.yarnpkg.com/atob/-/atob-2.1.2.tgz#6d9517eb9e030d2436666651e86bd9f6f13533c9"
   integrity sha512-Wm6ukoaOGJi/73p/cl2GvLjTI5JM1k/O14isD73YML8StrH/7/lRFgmg8nICZgD3bZZvjwCGxtMOD3wWNAu8cg==
 
+atomic-sleep@^1.0.0:
+  version "1.0.0"
+  resolved "https://registry.yarnpkg.com/atomic-sleep/-/atomic-sleep-1.0.0.tgz#eb85b77a601fc932cfe432c5acd364a9e2c9075b"
+  integrity sha512-kNOjDqAh7px0XWNI+4QbzoiR/nTkHAWNud2uvnJquD1/x5a7EQZMJT0AczqK0Qn67oY/TTQ1LbUKajZpp3I9tQ==
+
 autodll-webpack-plugin@0.4.2:
   version "0.4.2"
   resolved "https://registry.yarnpkg.com/autodll-webpack-plugin/-/autodll-webpack-plugin-0.4.2.tgz#36e98fbaf30c235d1d5d076330464ac80901415c"
@@ -4556,12 +4561,12 @@ pino-http@^4.3.0:
   dependencies:
     pino-std-serializers "^2.3.0"
 
-pino-std-serializers@^2.3.0, pino-std-serializers@^2.4.0:
+pino-std-serializers@^2.3.0, pino-std-serializers@^2.4.0, pino-std-serializers@^2.4.2:
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/pino-std-serializers/-/pino-std-serializers-2.4.2.tgz#cb5e3e58c358b26f88969d7e619ae54bdfcc1ae1"
   integrity sha512-WaL504dO8eGs+vrK+j4BuQQq6GLKeCCcHaMB2ItygzVURcL1CycwNEUHTD/lHFHs/NL5qAz2UKrjYWXKSf4aMQ==
 
-pino@^5.0.0, pino@^5.13.5:
+pino@^5.0.0:
   version "5.13.5"
   resolved "https://registry.yarnpkg.com/pino/-/pino-5.13.5.tgz#3bfd03c9e7d247adf806960a25c139572ce3cd4f"
   integrity sha512-NSArDZnjIXgzTLsYA5EhYwLiMe2OmGJ73760Wt5Vj44kUcuPJk4ub29BKtWXGAMwVmW1cQ7Q8jQaLjY/5Gxqcw==
@@ -4572,6 +4577,18 @@ pino@^5.0.0, pino@^5.13.5:
     pino-std-serializers "^2.3.0"
     quick-format-unescaped "^3.0.3"
     sonic-boom "^0.7.5"
+
+pino@^6.2.0:
+  version "6.2.1"
+  resolved "https://registry.yarnpkg.com/pino/-/pino-6.2.1.tgz#d2b86306b3998e8f6bb33bdf23910d418ed696cf"
+  integrity sha512-5F5A+G25Ex2rMOBEe3XYGyLSF4dikQZsFvPojwsqnDBX+rfg7+kw9s5i7pHuVAJImekjwb+MR9jQyHWPLENlvQ==
+  dependencies:
+    fast-redact "^2.0.0"
+    fast-safe-stringify "^2.0.7"
+    flatstr "^1.0.12"
+    pino-std-serializers "^2.4.2"
+    quick-format-unescaped "^4.0.1"
+    sonic-boom "^1.0.0"
 
 pkg-dir@^2.0.0:
   version "2.0.0"
@@ -4833,6 +4850,11 @@ quick-format-unescaped@^3.0.3:
   version "3.0.3"
   resolved "https://registry.yarnpkg.com/quick-format-unescaped/-/quick-format-unescaped-3.0.3.tgz#fb3e468ac64c01d22305806c39f121ddac0d1fb9"
   integrity sha512-dy1yjycmn9blucmJLXOfZDx1ikZJUi6E8bBZLnhPG5gBrVhHXx2xVyqqgKBubVNEXmx51dBACMHpoMQK/N/AXQ==
+
+quick-format-unescaped@^4.0.1:
+  version "4.0.1"
+  resolved "https://registry.yarnpkg.com/quick-format-unescaped/-/quick-format-unescaped-4.0.1.tgz#437a5ea1a0b61deb7605f8ab6a8fd3858dbeb701"
+  integrity sha512-RyYpQ6Q5/drsJyOhrWHYMWTedvjTIat+FTwv0K4yoUxzvekw2aRHMQJLlnvt8UantkZg2++bEzD9EdxXqkWf4A==
 
 randombytes@^2.0.0, randombytes@^2.0.1, randombytes@^2.0.5:
   version "2.1.0"
@@ -5340,6 +5362,14 @@ sonic-boom@^0.7.5:
   resolved "https://registry.yarnpkg.com/sonic-boom/-/sonic-boom-0.7.6.tgz#c42df6df884a6a3d54fa7a45b11e4e2196818d45"
   integrity sha512-k9E2QQ4zxuVRLDW+ZW6ISzJs3wlEorVdmM7ApDgor7wsGKSDG5YGHsGmgLY4XYh4DMlr/2ap2BWAE7yTFJtWnQ==
   dependencies:
+    flatstr "^1.0.12"
+
+sonic-boom@^1.0.0:
+  version "1.0.1"
+  resolved "https://registry.yarnpkg.com/sonic-boom/-/sonic-boom-1.0.1.tgz#a5fdfcab1ddea31732ce9c7c054f3a5751eee089"
+  integrity sha512-o9tx+bonVEXSaPtptyXQXpP8l6UV9Bi3im2geZskvWw2a/o/hrbWI7EBbbv+rOx6Hubnzun9GgH4WfbgEA3MFQ==
+  dependencies:
+    atomic-sleep "^1.0.0"
     flatstr "^1.0.12"
 
 source-list-map@^2.0.0:
