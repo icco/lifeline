@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "@icco/react-common": "^2019.10.4-1",
-    "@opencensus/core": "^0.0.18",
+    "@opencensus/core": "^0.0.21",
     "@opencensus/exporter-stackdriver": "^0.0.18",
     "@opencensus/nodejs": "^0.0.18",
     "@opencensus/propagation-stackdriver": "^0.0.18",
