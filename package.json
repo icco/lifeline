@@ -28,7 +28,7 @@
     "pino-stackdriver-serializers": "https://github.com/icco/pino-stackdriver-serializers",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
-    "webpack": "^4.41.2"
+    "webpack": "^4.42.1"
   },
   "devDependencies": {
     "prettier": "1.16.4"
