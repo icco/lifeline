@@ -22,7 +22,7 @@
     "compression": "^1.7.3",
     "express": "^4.16.4",
     "helmet": "^3.15.1",
-    "next": "^8.0.3",
+    "next": "^9.0.6",
     "pino": "^5.13.5",
     "pino-http": "^4.3.0",
     "pino-stackdriver-serializers": "https://github.com/icco/pino-stackdriver-serializers",
