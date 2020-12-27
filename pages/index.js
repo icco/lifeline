@@ -6,7 +6,7 @@ import data from "../static/data.json";
 import "../tachyons.css";
 
 function Home() {
-  let years = data.map(log => {
+  let years = data.map((log) => {
     return <Year key={log.release} {...log} />;
   });
 

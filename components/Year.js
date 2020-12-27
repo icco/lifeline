@@ -1,4 +1,4 @@
-const Year = data => {
+const Year = (data) => {
   const { release, img, year, changes } = data;
 
   let img_data = "";

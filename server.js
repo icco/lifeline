@@ -9,13 +9,13 @@ const { globalStats } = require("@opencensus/core");
 const tracing = require("@opencensus/nodejs");
 const {
   StackdriverTraceExporter,
-  StackdriverStatsExporter
+  StackdriverStatsExporter,
 } = require("@opencensus/exporter-stackdriver");
 const propagation = require("@opencensus/propagation-stackdriver");
 const {
   SSLMiddleware,
   NELMiddleware,
-  ReportToMiddleware
+  ReportToMiddleware,
 } = require("@icco/react-common");
 
 const GOOGLE_PROJECT = "icco-cloud";
@@ -29,29 +29,29 @@ const logger = pinoLogger({
   level: "info",
   base: null,
   prettyPrint: {
-    doSomething: true
+    doSomething: true,
   },
-  prettifier: pinoStackdriver.sdPrettifier
+  prettifier: pinoStackdriver.sdPrettifier,
 });
 
 if (process.env.ENABLE_STACKDRIVER) {
   const sse = new StackdriverStatsExporter({
-    projectId: GOOGLE_PROJECT
+    projectId: GOOGLE_PROJECT,
   });
   globalStats.registerExporter(sse);
 
   const sp = propagation.v1;
   const ste = new StackdriverTraceExporter({
-    projectId: GOOGLE_PROJECT
+    projectId: GOOGLE_PROJECT,
   });
   const tracer = tracing.start({
     samplingRate: 1,
     logger: logger,
     exporter: ste,
-    propagation: sp
+    propagation: sp,
   }).tracer;
 
-  tracer.startRootSpan({ name: "init" }, rootSpan => {
+  tracer.startRootSpan({ name: "init" }, (rootSpan) => {
     for (let i = 0; i < 1000000; i++) {}
 
     rootSpan.end();
@@ -80,19 +80,19 @@ app
           styleSrc: [
             "'self'",
             "'unsafe-inline'",
-            "https://fonts.googleapis.com/"
+            "https://fonts.googleapis.com/",
           ],
           fontSrc: ["https://fonts.gstatic.com"],
           imgSrc: [
             "'self'",
             "https://a.natwelch.com",
-            "https://icco.imgix.net"
+            "https://icco.imgix.net",
           ],
           scriptSrc: ["'self'", "'unsafe-eval'"],
           objectSrc: ["'none'"],
           reportUri: "https://reportd.natwelch.com/report/life",
-          reportTo: "default"
-        }
+          reportTo: "default",
+        },
       })
     );
 
@@ -107,12 +107,12 @@ app
       return;
     });
 
-    server.listen(port, err => {
+    server.listen(port, (err) => {
       if (err) throw err;
       console.log(`> Ready on http://localhost:${port}`);
     });
   })
-  .catch(ex => {
+  .catch((ex) => {
     logger.error(ex);
     process.exit(1);
   });
