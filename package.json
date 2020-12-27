@@ -9,7 +9,7 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next serve -p $PORT"
+    "start": "next -p $PORT"
   },
   "dependencies": {
     "@icco/react-common": "^2020.11.4-1",
