@@ -2,29 +2,18 @@
   "name": "life",
   "version": "1.0.0",
   "description": "A changelog of my life",
-  "main": "index.js",
   "repository": "git@github.com:icco/lifeline.git",
   "author": "Nat Welch <nat@natwelch.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "node server.js",
+    "dev": "next dev",
     "build": "next build",
-    "start": "node server.js"
+    "start": "next serve -p $PORT"
   },
   "dependencies": {
     "@icco/react-common": "^2020.11.4-1",
-    "@opencensus/core": "^0.0.22",
-    "@opencensus/exporter-stackdriver": "^0.0.22",
-    "@opencensus/nodejs": "^0.0.22",
-    "@opencensus/propagation-stackdriver": "^0.0.22",
-    "compression": "^1.7.3",
-    "express": "^4.16.4",
-    "helmet": "^4.2.0",
     "next": "^10.0.0",
-    "pino": "^6.0.0",
-    "pino-http": "^5.0.0",
-    "pino-stackdriver-serializers": "https://github.com/icco/pino-stackdriver-serializers",
     "react": "^16.8.3",
     "react-dom": "^16.8.3",
     "webpack": "^5.0.0"

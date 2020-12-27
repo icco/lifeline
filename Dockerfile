@@ -1,4 +1,4 @@
-FROM node:10-alpine
+FROM node:14-alpine
 WORKDIR /usr/src/app
 RUN apk add --no-cache git
 COPY package.json yarn.lock ./
