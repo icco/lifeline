@@ -1,7 +1,6 @@
 const express = require("express");
 const next = require("next");
 const helmet = require("helmet");
-const expectCt = require("expect-ct");
 const compression = require("compression");
 const pinoLogger = require("pino");
 const pinoMiddleware = require("pino-http");
@@ -97,7 +96,6 @@ app
       })
     );
 
-    server.use(expectCt({ maxAge: 123 }));
     server.use(SSLMiddleware());
 
     server.get("/healthz", (req, res) => {
