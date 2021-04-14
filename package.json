@@ -7,9 +7,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next",
     "build": "next build",
-    "start": "next -p $PORT"
+    "start": "next start -p $PORT"
   },
   "dependencies": {
     "@icco/react-common": "^2020.11.4-1",
