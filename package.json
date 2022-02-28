@@ -7,18 +7,33 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "next",
+    "dev": "next lint --fix && next dev -p 8080",
+    "lint": "next lint --fix",
     "build": "next build",
     "start": "next start -p $PORT"
   },
   "dependencies": {
-    "@icco/react-common": "^2020.11.4-1",
-    "next": "^11.1.0",
+    "@icco/react-common": "^2022.2.11-4",
+    "next": "^12.1.0",
     "react": "^17.0.1",
-    "react-dom": "^17.0.1",
-    "webpack": "^5.0.0"
+    "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "prettier": "^2.2.1"
+    "@babel/core": "^7.0.0",
+    "@types/lodash": "^4.14.178",
+    "@types/luxon": "^2.0.9",
+    "@types/react": "^17.0.38",
+    "@typescript-eslint/eslint-plugin": "^5.8.1",
+    "@typescript-eslint/parser": "^5.8.1",
+    "eslint": "^8.0.0",
+    "eslint-config-next": "^12.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-mdx": "^1.16.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "eslint-plugin-simple-import-sort": "^7.0.0",
+    "get-graphql-schema": "^2.1.2",
+    "prettier": "^2.3.2",
+    "typescript": "^4.5.4",
+    "webpack": "^5.10.0"
   }
 }

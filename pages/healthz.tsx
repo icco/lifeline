@@ -1,5 +1,5 @@
 function Healthz() {
-  return <>"ok"</>;
+  return <>ok</>;
 }
 
 export default Healthz;

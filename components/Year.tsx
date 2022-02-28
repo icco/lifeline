@@ -1,18 +1,31 @@
-const Year = (data) => {
+import Image from "next/image";
+
+const Year = (data: {
+  release: string;
+  img?: string;
+  year: number;
+  changes: string[];
+}): JSX.Element => {
   const { release, img, year, changes } = data;
 
-  let img_data = "";
+  let img_data = <></>;
   if (img !== undefined) {
     img_data = (
       <div className="pr3-ns mb4 mb0-ns w-100 w-40-ns dim">
         <a className="no-underline" href={"/static/" + img}>
-          <img className="db" src={"/static/" + img} />
+          <Image
+            width={300}
+            height={400}
+            className="db"
+            src={"/static/" + img}
+            alt={`photo of Nat in ${year}`}
+          />
         </a>
       </div>
     );
   }
 
-  let change_data = changes.map((change, i) => {
+  const change_data = changes.map((change, i) => {
     return <li key={i} dangerouslySetInnerHTML={{ __html: change }} />;
   });
 
