@@ -11,7 +11,7 @@ function Home() {
     <div className="code mw7 center pa3">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
-        <title>Nat's Lifeline</title>
+        <title>Nat&apos;s Lifeline</title>
       </Head>
       <section>
         <h1>Nat Welch</h1>
@@ -19,13 +19,14 @@ function Home() {
         <p>
           Starting in 2011, I decided to create a changelog for my life. For
           those of you in the software world, this may make total sense, but for
-          the rest of you, I will explain. Basically, a changelog is a list of all
-          changes a project has undergone since the last &quot;release&quot;. So for every
-          &quot;release&quot;, I plan on including a current picture, a list of
-          significant events since the last release, and anything else of note.
-          I am still trying to figure out how I want to write the changes, so
-          these will probably change over time. Also, I am slowly going back to
-          retroactively write old release notes.
+          the rest of you, I will explain. Basically, a changelog is a list of
+          all changes a project has undergone since the last
+          &quot;release&quot;. So for every &quot;release&quot;, I plan on
+          including a current picture, a list of significant events since the
+          last release, and anything else of note. I am still trying to figure
+          out how I want to write the changes, so these will probably change
+          over time. Also, I am slowly going back to retroactively write old
+          release notes.
         </p>
 
         <p>
