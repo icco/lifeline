@@ -1,8 +1,11 @@
 import Year from "components/Year";
+import * as fs from "fs";
 import Head from "next/head";
-import data from "public/static/data.json";
 
-function Home({ years }) {
+function Home(params: {
+  years: { year: number; img?: string; release: string; changes: string[] }[];
+}): JSX.Element {
+  const { years } = params;
   return (
     <div className="code mw7 center pa3">
       <Head>
@@ -40,18 +43,25 @@ function Home({ years }) {
         </p>
       </section>
 
-      {years}
+      {years.map((year) => (
+        <Year
+          key={year.release}
+          release={year.release}
+          img={year.img}
+          year={year.year}
+          changes={year.changes}
+        />
+      ))}
     </div>
   );
 }
 
 export async function getStaticProps() {
-  const years = data.map((log) => {
-    return <Year key={log.release} {...log} />;
-  });
+  const file = fs.readFileSync("public/static/data.json");
+  const data = JSON.parse(file.toString());
 
   return {
-    props: { years },
+    props: { years: data },
   };
 }
 

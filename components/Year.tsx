@@ -14,6 +14,8 @@ const Year = (data: {
       <div className="pr3-ns mb4 mb0-ns w-100 w-40-ns dim">
         <a className="no-underline" href={"/static/" + img}>
           <Image
+            width={300}
+            height={400}
             className="db"
             src={"/static/" + img}
             alt={`photo of Nat in ${year}`}
