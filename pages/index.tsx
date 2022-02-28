@@ -19,12 +19,12 @@ function Home() {
         <p>
           Starting in 2011, I decided to create a changelog for my life. For
           those of you in the software world, this may make total sense, but for
-          the rest of you, I'll explain. Basically, a changelog is a list of all
-          changes a project has undergone since the last "release". So for every
-          "release", I plan on including a current picture, a list of
+          the rest of you, I will explain. Basically, a changelog is a list of all
+          changes a project has undergone since the last &quot;release&quot;. So for every
+          &quot;release&quot;, I plan on including a current picture, a list of
           significant events since the last release, and anything else of note.
-          I'm still trying to figure out how I want to write the changes, so
-          these will probably change over time. Also, I'm slowly going back to
+          I am still trying to figure out how I want to write the changes, so
+          these will probably change over time. Also, I am slowly going back to
           retroactively write old release notes.
         </p>
 
