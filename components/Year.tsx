@@ -2,7 +2,7 @@ import Image from "next/image";
 
 const Year = (data: {
   release: string;
-  img: string;
+  img?: string;
   year: number;
   changes: string[];
 }): JSX.Element => {

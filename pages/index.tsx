@@ -3,7 +3,6 @@ import Head from "next/head";
 import data from "public/static/data.json";
 
 function Home({ years }) {
-
   return (
     <div className="code mw7 center pa3">
       <Head>
@@ -46,14 +45,14 @@ function Home({ years }) {
   );
 }
 
-export async function getStaticProps(context) {
+export async function getStaticProps() {
   const years = data.map((log) => {
     return <Year key={log.release} {...log} />;
   });
 
   return {
     props: { years },
-  }
+  };
 }
 
 export default Home;
