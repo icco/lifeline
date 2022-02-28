@@ -1,10 +1,9 @@
-import Head from "next/head";
-
 import Year from "components/Year";
+import Head from "next/head";
 import data from "public/static/data.json";
 
 function Home() {
-  let years = data.map((log) => {
+  const years = data.map((log) => {
     return <Year key={log.release} {...log} />;
   });
 
