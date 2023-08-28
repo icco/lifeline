@@ -1,5 +1,17 @@
 [
   {
+    "release": "Nat Welch 3.5",
+    "year": 2023,
+    "img": "img/35.jpg",
+    "changes": []
+  },
+  {
+    "release": "Nat Welch 3.4",
+    "year": 2022,
+    "img": "img/34.jpg",
+    "changes": []
+  },
+  {
     "release": "Nat Welch 3.3",
     "year": 2021,
     "img": "img/33.jpg",
@@ -186,12 +198,16 @@
   {
     "release": "Nat Welch 1.7",
     "year": 2005,
-    "changes": ["Worked as a Scoutcraft staff at Oljato over the Summer."]
+    "changes": [
+      "Worked as a Scoutcraft staff at Oljato over the Summer."
+    ]
   },
   {
     "release": "Nat Welch 1.6",
     "year": 2004,
-    "changes": ["Worked as an SIR at Oljato over the Summer."]
+    "changes": [
+      "Worked as an SIR at Oljato over the Summer."
+    ]
   },
   {
     "release": "Nat Welch 1.5",
@@ -213,7 +229,9 @@
   {
     "release": "Nat Welch 0.9",
     "year": 1997,
-    "changes": ["My younger brother Travis was born on December 30th, 1996."]
+    "changes": [
+      "My younger brother Travis was born on December 30th, 1996."
+    ]
   },
   {
     "release": "Nat Welch 0.5",
