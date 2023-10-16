@@ -19,7 +19,7 @@
     "react-dom": "^17.0.1"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.23.2",
     "@types/lodash": "^4.14.178",
     "@types/luxon": "^3.3.1",
     "@types/react": "^17.0.38",
