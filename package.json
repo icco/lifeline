@@ -13,8 +13,8 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
-    "@icco/react-common": "^2022.2.11-4",
-    "next": "^13.5.0",
+    "@icco/react-common": "^2023.3.18-2",
+    "next": "^13.0.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1"
   },
