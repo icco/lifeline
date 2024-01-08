@@ -546,6 +546,11 @@
   resolved "https://registry.yarnpkg.com/@pkgjs/parseargs/-/parseargs-0.11.0.tgz#a77ea742fab25775145434eb1d2328cf5013ac33"
   integrity sha512-+1VkjdD0QBLPodGrJUeqarH8VAIvQODIbwh9XpP5Syisf7YoQgsJKPNFoqqLQlu+VQ/tVSshMR6loPMn8U+dPg==
 
+"@pkgr/core@^0.1.0":
+  version "0.1.0"
+  resolved "https://registry.yarnpkg.com/@pkgr/core/-/core-0.1.0.tgz#7d8dacb7fdef0e4387caf7396cbd77f179867d06"
+  integrity sha512-Zwq5OCzuwJC2jwqmpEQt7Ds1DTi6BWSwoGkbb1n9pO3hzb35BoJELx7c0T23iDkBGkh2e7tvOtjF3tr3OaQHDQ==
+
 "@pkgr/utils@^2.4.2":
   version "2.4.2"
   resolved "https://registry.yarnpkg.com/@pkgr/utils/-/utils-2.4.2.tgz#9e638bbe9a6a6f165580dc943f138fd3309a2cbc"
@@ -1655,10 +1660,10 @@ eslint-import-resolver-typescript@^3.5.2:
     is-core-module "^2.11.0"
     is-glob "^4.0.3"
 
-eslint-mdx@^2.3.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-2.3.0.tgz#568603b72b1dab81b620bbc84ec9a89b34cba9a1"
-  integrity sha512-ji+iKVSjpzsCzMrHNm6xRDMar1iH4OpxROAE2RtCeEFdg4pRv6/anwFD76HIOaaQY+3wD1dfk8/VQ5faPB+VHw==
+eslint-mdx@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/eslint-mdx/-/eslint-mdx-2.3.2.tgz#6fb16d2b3c521d4bb97db90cf75036ec2bf8363f"
+  integrity sha512-JGCTqFJ68OIJAl/BRm2a2OckrBHj56G0wM2/sN/vV1VseTzK4cL2D+N3khlRPWMOKUa6zXHrmQ6WIoR2ZXkCTw==
   dependencies:
     acorn "^8.10.0"
     acorn-jsx "^5.3.2"
@@ -1667,7 +1672,7 @@ eslint-mdx@^2.3.0:
     remark-mdx "^2.3.0"
     remark-parse "^10.0.2"
     remark-stringify "^10.0.3"
-    synckit "^0.8.5"
+    synckit "^0.9.0"
     tslib "^2.6.1"
     unified "^10.1.2"
     unified-engine "^10.1.0"
@@ -1734,12 +1739,12 @@ eslint-plugin-markdown@^3.0.1:
   dependencies:
     mdast-util-from-markdown "^0.8.5"
 
-eslint-plugin-mdx@^2.2.0:
-  version "2.3.0"
-  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-2.3.0.tgz#45cd3114000e36abda65ac3f307d122579ca9340"
-  integrity sha512-S48QlfeV/yfaeX6L/vemh1oGBx+CMG66cceoUtxGmdFTf4hbr9bRKZ25FKKrhzpDX0QLY474mWo86NAogp+rFw==
+eslint-plugin-mdx@^2.3.2:
+  version "2.3.2"
+  resolved "https://registry.yarnpkg.com/eslint-plugin-mdx/-/eslint-plugin-mdx-2.3.2.tgz#521291ca312572398565cb77b27da627fc3df5a0"
+  integrity sha512-NwDt+g2cheYKfgguJF1eYHjStUDVploN0OZ2okg1whh2cw2Pz3jxbGqU9FYe4GnLtZD77EKVggxUEdMzbidwGQ==
   dependencies:
-    eslint-mdx "^2.3.0"
+    eslint-mdx "^2.3.2"
     eslint-plugin-markdown "^3.0.1"
     remark-mdx "^2.3.0"
     remark-parse "^10.0.2"
@@ -3992,6 +3997,7 @@ streamsearch@^1.1.0:
   integrity sha512-Mcc5wHehp9aXz1ax6bZUyY5afg9u2rv5cqQI3mRrYkGC8rW2hM02jWuwjtL++LS5qinSyhj2QfLyNsuc+VsExg==
 
 "string-width-cjs@npm:string-width@^4.2.0", string-width@^4.1.0:
+  name string-width-cjs
   version "4.2.3"
   resolved "https://registry.yarnpkg.com/string-width/-/string-width-4.2.3.tgz#269c7117d27b05ad2e536830a8ec895ef9c6d010"
   integrity sha512-wKyQRQpjJ0sIp62ErSZdGsjMJWsap5oRNihHhu6G7JVO/9jIB6UyevL+tXuOqrng8j/cxKTWyWUwvSTriiZz/g==
@@ -4138,12 +4144,20 @@ supports-preserve-symlinks-flag@^1.0.0:
   resolved "https://registry.yarnpkg.com/supports-preserve-symlinks-flag/-/supports-preserve-symlinks-flag-1.0.0.tgz#6eda4bd344a3c94aea376d4cc31bc77311039e09"
   integrity sha512-ot0WnXS9fgdkgIcePe6RHNk1WA8+muPa6cSjeR3V8K27q9BB1rTE3R1p7Hv0z1ZyAc8s6Vvv8DIyWf681MAt0w==
 
-synckit@^0.8.5, synckit@^0.8.6:
+synckit@^0.8.6:
   version "0.8.7"
   resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.8.7.tgz#7812bc5f42113c9cec2db4c2b952f7e9e0aff0f3"
   integrity sha512-Ic2DW4WMr0gJ7z9rXYGlWPNBVzmsIZLFfKeVhmuVBUtw6ZOFB1GZnCcWQLc7OuBFLVLHKFAdaIZNc/yyUEvZ1g==
   dependencies:
     "@pkgr/utils" "^2.4.2"
+    tslib "^2.6.2"
+
+synckit@^0.9.0:
+  version "0.9.0"
+  resolved "https://registry.yarnpkg.com/synckit/-/synckit-0.9.0.tgz#5b33b458b3775e4466a5b377fba69c63572ae449"
+  integrity sha512-7RnqIMq572L8PeEzKeBINYEJDDxpcH8JEgLwUqBd3TkofhFRbkq4QLR0u+36avGAhCRbk2nnmjcW9SE531hPDg==
+  dependencies:
+    "@pkgr/core" "^0.1.0"
     tslib "^2.6.2"
 
 tapable@^2.1.1, tapable@^2.2.0:
