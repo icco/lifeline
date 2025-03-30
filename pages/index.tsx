@@ -1,10 +1,11 @@
 import Year from "components/Year";
 import * as fs from "fs";
 import Head from "next/head";
+import React from "react";
 
 function Home(params: {
   years: { year: number; img?: string; release: string; changes: string[] }[];
-}): JSX.Element {
+}): React.ReactElement {
   const { years } = params;
   return (
     <div className="code mw7 center pa3">
