@@ -1,3 +1,4 @@
+import React from "react";
 import Image from "next/image";
 
 const Year = (data: {
@@ -5,7 +6,7 @@ const Year = (data: {
   img?: string;
   year: number;
   changes: string[];
-}): JSX.Element => {
+}): React.ReactElement => {
   const { release, img, year, changes } = data;
 
   let img_data = <></>;
