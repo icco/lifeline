@@ -1,20 +1,21 @@
 {
   "name": "life",
   "version": "1.0.0",
+  "type": "module",
   "description": "A changelog of my life",
   "repository": "git@github.com:icco/lifeline.git",
   "author": "Nat Welch <nat@natwelch.com>",
   "license": "MIT",
   "private": true,
   "scripts": {
-    "dev": "next lint --fix && next dev -p 8080",
-    "lint": "next lint --fix",
+    "dev": "eslint --fix . && next dev -p 8080",
+    "lint": "eslint --fix .",
     "build": "next build",
     "start": "next start -p $PORT"
   },
   "dependencies": {
     "@icco/react-common": "^2025.1.27-1",
-    "next": "^15.4.10",
+    "next": "^16.0.10",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "sharp": "^0.34.5"
@@ -27,7 +28,7 @@
     "@typescript-eslint/eslint-plugin": "^8.49.0",
     "@typescript-eslint/parser": "^8.49.0",
     "eslint": "^9.39.2",
-    "eslint-config-next": "15.2.4",
+    "eslint-config-next": "16.0.10",
     "eslint-config-prettier": "^9.0.0",
     "eslint-plugin-mdx": "^3.6.2",
     "eslint-plugin-prettier": "^5.0.0",

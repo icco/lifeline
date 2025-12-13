@@ -663,7 +663,7 @@ img {
   clear: both;
 }
 .cf {
-  *zoom: 1;
+  /* clearfix - old IE zoom hack removed for Turbopack compatibility */
 }
 .cl {
   clear: left;

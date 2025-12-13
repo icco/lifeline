@@ -6,20 +6,20 @@ This is hosted at [life.natwelch.com](http://life.natwelch.com) thanks to Github
 
 ## Inspiration
 
- * <http://dev.opera.com/articles/view/css-only-scrollable-timeline/>
- * <http://dustincurtis.com/about.html>
- * <http://www.google.com/tenthbirthday/>
- * <http://tutorialzine.com/2010/01/advanced-event-timeline-with-php-css-jquery/>
- * <http://www.simile-widgets.org/timeline/>
- * <http://feltron.com/>
- * <http://en.wikipedia.org/wiki/Changelog>
- * <http://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html>
- * <https://github.com/Gawen/life>
+- <http://dev.opera.com/articles/view/css-only-scrollable-timeline/>
+- <http://dustincurtis.com/about.html>
+- <http://www.google.com/tenthbirthday/>
+- <http://tutorialzine.com/2010/01/advanced-event-timeline-with-php-css-jquery/>
+- <http://www.simile-widgets.org/timeline/>
+- <http://feltron.com/>
+- <http://en.wikipedia.org/wiki/Changelog>
+- <http://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html>
+- <https://github.com/Gawen/life>
 
 ## TODO
 
- * Put link to code in footer
- * Add a photo for every year
- * Fix some spelling errors
- * order existing bullet points by date
- * Add missing years
+- Put link to code in footer
+- Add a photo for every year
+- Fix some spelling errors
+- order existing bullet points by date
+- Add missing years
