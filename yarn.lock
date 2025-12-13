@@ -214,10 +214,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/object-schema/-/object-schema-2.0.3.tgz#4a2868d75d6d6963e423bcf90b7fd1be343409d3"
   integrity sha512-93zYdMES/c1D69yZiKDBj0V24vqNzB/koF26KPaagAfd3P/4gUlh3Dys5ogAK+Exi9QyzlD8x/08Zt7wIKcDcA==
 
-"@icco/react-common@^2023.3.18-2":
-  version "2023.3.18-2"
-  resolved "https://registry.yarnpkg.com/@icco/react-common/-/react-common-2023.3.18-2.tgz#1c9cabfc751aa9a5fad67dc8a62d7732e72955b3"
-  integrity sha512-cgDi5HAMM+swdksucv/al5R+/tHaaB+yNWGlrf5WX11vJeDDAd6bbIA81lDv+YORzvPpNGv0J3AlWRRBRwAB3Q==
+"@icco/react-common@^2025.1.27-1":
+  version "2025.1.27-1"
+  resolved "https://registry.yarnpkg.com/@icco/react-common/-/react-common-2025.1.27-1.tgz#7f630a6ecfc17535aa8fd2b61e9daab874c82099"
+  integrity sha512-rAx2PtXyLJbUpb9i8UIzhyolHvMZP/jp0Nz575R8Sw3PT6OHhaDcxpyu6K0XUJFHlIkTjMNKLzIUg1IrIte4qg==
   dependencies:
     prop-types "^15.7"
     react-loading "^2.0"
@@ -686,13 +686,6 @@
   integrity sha512-GRaXQx6jGfL8sKfaIDD6OupbIHBr9jv7Jnaml9tB7l4v068PAOXqfcujMMo5PhbIs6ggR1XODELqahT2R8v0fg==
   dependencies:
     undici-types "~5.26.4"
-
-"@types/react@19.0.12":
-  version "19.0.12"
-  resolved "https://registry.yarnpkg.com/@types/react/-/react-19.0.12.tgz#338b3f7854adbb784be454b3a83053127af96bd3"
-  integrity sha512-V6Ar115dBDrjbtXSrS+/Oruobc+qVbbUxDFC1RSbRqLt5SYvxxyIDrSC85RWml54g+jfNeEMZhEj7wW07ONQhA==
-  dependencies:
-    csstype "^3.0.2"
 
 "@types/react@19.2.7":
   version "19.2.7"
@@ -1566,7 +1559,7 @@ cross-spawn@^7.0.2, cross-spawn@^7.0.6:
     shebang-command "^2.0.0"
     which "^2.0.1"
 
-csstype@^3.0.2, csstype@^3.2.2:
+csstype@^3.2.2:
   version "3.2.3"
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.2.3.tgz#ec48c0f3e993e50648c86da559e2610995cf989a"
   integrity sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==
