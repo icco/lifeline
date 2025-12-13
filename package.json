@@ -14,16 +14,16 @@
   },
   "dependencies": {
     "@icco/react-common": "^2025.1.27-1",
-    "next": "15.4.10",
-    "react": "19.2.3",
-    "react-dom": "19.2.3",
+    "next": "^15.4.10",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "sharp": "^0.34.5"
   },
   "devDependencies": {
     "@babel/core": "^7.0.0",
     "@types/lodash": "^4.14.178",
     "@types/luxon": "^3.3.1",
-    "@types/react": "19.2.7",
+    "@types/react": "^19.2.7",
     "@typescript-eslint/eslint-plugin": "^6.0.0",
     "@typescript-eslint/parser": "^6.0.0",
     "eslint": "^8.0.0",
@@ -36,8 +36,5 @@
     "prettier": "^3.0.0",
     "typescript": "^5.3.3",
     "webpack": "^5.10.0"
-  },
-  "resolutions": {
-    "@types/react": "19.2.7"
   }
 }
