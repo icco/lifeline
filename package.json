@@ -21,7 +21,7 @@
     "sharp": "^0.34.5"
   },
   "devDependencies": {
-    "@babel/core": "^7.0.0",
+    "@babel/core": "^7.28.6",
     "@types/lodash": "^4.14.178",
     "@types/luxon": "^3.3.1",
     "@types/react": "^19.2.7",
