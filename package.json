@@ -15,7 +15,7 @@
   },
   "dependencies": {
     "@icco/react-common": "^2025.1.27-1",
-    "next": "^16.1.6",
+    "next": "^16.1.7",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
     "sharp": "^0.34.5"
