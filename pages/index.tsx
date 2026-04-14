@@ -19,10 +19,10 @@ function Home(params: {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Nat&apos;s Lifeline</title>
       </Head>
-      <section>
-        <h1>Nat Welch</h1>
-        <h2>CHANGELOG.TXT</h2>
-        <p>
+      <section className="mb-8">
+        <h1 className="text-3xl font-bold mb-2">Nat Welch</h1>
+        <h2 className="text-xl font-semibold mb-4">CHANGELOG.TXT</h2>
+        <p className="mb-4">
           Starting in 2011, I decided to create a changelog for my life. For
           those of you in the software world, this may make total sense, but for
           the rest of you, I will explain. Basically, a changelog is a list of
@@ -35,15 +35,18 @@ function Home(params: {
           release notes.
         </p>
 
-        <p>
+        <p className="mb-4">
           You can see{" "}
-          <a href="https://github.com/icco/natwelch.com/blob/gh-pages/life.geojson">
+          <a
+            className="underline"
+            href="https://github.com/icco/natwelch.com/blob/gh-pages/life.geojson"
+          >
             a map to go with this on github
           </a>
           .
         </p>
 
-        <p>
+        <p className="mb-4">
           Hope you enjoy,
           <br />
           /Nat

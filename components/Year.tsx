@@ -39,7 +39,7 @@ const Year = (data: {
           <h2 className="text-2xl font-light mt-0 leading-tight">
             {release} - {year}
           </h2>
-          <ul className="text-sm md:text-base leading-normal max-w-prose">
+          <ul className="text-sm md:text-base leading-normal max-w-prose list-disc pl-5 space-y-1">
             {change_data}
           </ul>
         </div>
