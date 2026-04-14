@@ -60,8 +60,24 @@ function Home(params: {
         />
       ))}
 
-      <footer className="py-8 border-t border-black/20">
-        <Social />
+      <footer className="pt-[14vh] pb-[8vh]">
+        <div className="divider" />
+        <div className="footer sm:footer-horizontal items-center p-4">
+          <aside className="grid-flow-col items-center">
+            <p>&copy; Nat Welch. All rights reserved.</p>
+          </aside>
+          <nav className="grid-flow-col gap-4 md:place-self-center md:justify-self-end">
+            <a href="https://github.com/icco/lifeline" title="Source Code">
+              Source
+            </a>
+          </nav>
+        </div>
+        <div className="footer sm:footer-horizontal text-base-content p-4">
+          <nav className="gap-4">
+            <h6 className="footer-title">Social</h6>
+            <Social includeWebring={false} size={24} />
+          </nav>
+        </div>
       </footer>
     </div>
   );
