@@ -254,15 +254,12 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.3.tgz#c2b9d2e374ee62c586d3adbea87199b1d7a7a6ba"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
-"@icco/react-common@^2025.1.27-1":
-  version "2025.1.27-1"
-  resolved "https://registry.yarnpkg.com/@icco/react-common/-/react-common-2025.1.27-1.tgz#7f630a6ecfc17535aa8fd2b61e9daab874c82099"
-  integrity sha512-rAx2PtXyLJbUpb9i8UIzhyolHvMZP/jp0Nz575R8Sw3PT6OHhaDcxpyu6K0XUJFHlIkTjMNKLzIUg1IrIte4qg==
+"@icco/react-common@^2026.413.4":
+  version "2026.413.4"
+  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.413.4/e0b8292e713358ed771cbb96989c8fc18b3fe926#e0b8292e713358ed771cbb96989c8fc18b3fe926"
+  integrity sha512-vYLfwiDoREAy8xphrXfxyi/RoOD7nkxfhjiu/rqucCy1XGHJMa8546wiZzADpYZ9JriDgX/IuaT9kHxKDht7xQ==
   dependencies:
-    prop-types "^15.7"
-    react-loading "^2.0"
     vivus "^0.4.6"
-    webpack "^5.0.0"
 
 "@img/colour@^1.0.0":
   version "1.1.0"
@@ -3787,7 +3784,7 @@ promise-retry@^2.0.1:
     err-code "^2.0.2"
     retry "^0.12.0"
 
-prop-types@^15.7, prop-types@^15.8.1:
+prop-types@^15.8.1:
   version "15.8.1"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.8.1.tgz#67d87bf1a694f48435cf332c24af10214a3140b5"
   integrity sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==
@@ -3817,11 +3814,6 @@ react-is@^16.13.1:
   version "16.13.1"
   resolved "https://registry.yarnpkg.com/react-is/-/react-is-16.13.1.tgz#789729a4dc36de2999dc156dd6c1d9c18cea56a4"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
-
-react-loading@^2.0:
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/react-loading/-/react-loading-2.0.3.tgz#e8138fb0c3e4674e481b320802ac7048ae14ffb9"
-  integrity sha512-Vdqy79zq+bpeWJqC+xjltUjuGApyoItPgL0vgVfcJHhqwU7bAMKzysfGW/ADu6i0z0JiOCRJjo+IkFNkRNbA3A==
 
 react@^19.2.3:
   version "19.2.4"
@@ -4769,7 +4761,7 @@ webpack-sources@^3.3.4:
   resolved "https://registry.yarnpkg.com/webpack-sources/-/webpack-sources-3.3.4.tgz#a338b95eb484ecc75fbb196cbe8a2890618b4891"
   integrity sha512-7tP1PdV4vF+lYPnkMR0jMY5/la2ub5Fc/8VQrrU+lXkiM6C4TjVfGw7iKfyhnTQOsD+6Q/iKw0eFciziRgD58Q==
 
-webpack@^5.0.0, webpack@^5.105.4:
+webpack@^5.105.4:
   version "5.105.4"
   resolved "https://registry.yarnpkg.com/webpack/-/webpack-5.105.4.tgz#1b77fcd55a985ac7ca9de80a746caffa38220169"
   integrity sha512-jTywjboN9aHxFlToqb0K0Zs9SbBoW4zRUlGzI2tYNxVYcEi/IPpn+Xi4ye5jTLvX2YeLuic/IvxNot+Q1jMoOw==
