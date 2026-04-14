@@ -16,7 +16,7 @@
   "dependencies": {
     "@icco/react-common": "^2026.413.4",
     "@tailwindcss/postcss": "^4.2.2",
-    "daisyui": "5",
+    "daisyui": "^5.0.0",
     "next": "^16.2.2",
     "postcss": "^8.5.9",
     "react": "^19.2.3",
@@ -39,7 +39,7 @@
     "eslint-plugin-simple-import-sort": "^13.0.0",
     "get-graphql-schema": "^2.1.2",
     "prettier": "^3.8.1",
-    "typescript": "^6",
+    "typescript": "^6.0.0",
     "webpack": "^5.105.4"
   }
 }
