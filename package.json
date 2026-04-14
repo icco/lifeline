@@ -14,11 +14,15 @@
     "start": "next start -p $PORT"
   },
   "dependencies": {
-    "@icco/react-common": "^2025.1.27-1",
+    "@icco/react-common": "^2026.413.4",
+    "@tailwindcss/postcss": "^4.2.2",
+    "daisyui": "^5.0.0",
     "next": "^16.2.2",
+    "postcss": "^8.5.9",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
@@ -35,7 +39,7 @@
     "eslint-plugin-simple-import-sort": "^13.0.0",
     "get-graphql-schema": "^2.1.2",
     "prettier": "^3.8.1",
-    "typescript": "^5.3.3",
+    "typescript": "^6.0.0",
     "webpack": "^5.105.4"
   }
 }
