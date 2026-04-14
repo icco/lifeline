@@ -5,7 +5,9 @@ FROM node:25-alpine AS deps
 RUN apk add --no-cache libc6-compat
 WORKDIR /app
 COPY package.json yarn.lock .npmrc ./
-RUN yarn install --frozen-lockfile
+RUN --mount=type=secret,id=GITHUB_TOKEN \
+    GITHUB_TOKEN=$(cat /run/secrets/GITHUB_TOKEN) \
+    yarn install --frozen-lockfile
 
 # Rebuild the source code only when needed
 FROM node:25-alpine AS builder
@@ -18,8 +20,8 @@ RUN yarn build
 FROM node:25-alpine AS runner
 WORKDIR /app
 
-ENV NODE_ENV production
-ENV PORT 8080
+ENV NODE_ENV=production
+ENV PORT=8080
 
 # You only need to copy next.config.js if you are NOT using the default configuration
 #COPY --from=builder /app/next.config.js ./
