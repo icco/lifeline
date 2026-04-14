@@ -8,7 +8,7 @@ function Home(params: {
 }): React.ReactElement {
   const { years } = params;
   return (
-    <div className="code mw7 center pa3">
+    <div className="font-mono max-w-3xl mx-auto p-4">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Nat&apos;s Lifeline</title>

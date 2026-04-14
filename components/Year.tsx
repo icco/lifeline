@@ -12,12 +12,12 @@ const Year = (data: {
   let img_data = <></>;
   if (img !== undefined) {
     img_data = (
-      <div className="pr3-ns mb4 mb0-ns w-100 w-40-ns dim">
+      <div className="md:pr-4 mb-8 md:mb-0 w-full md:w-2/5 transition-opacity hover:opacity-75">
         <a className="no-underline" href={"/static/" + img}>
           <Image
             width={300}
             height={400}
-            className="db"
+            className="block"
             src={"/static/" + img}
             alt={`photo of Nat in ${year}`}
           />
@@ -31,15 +31,17 @@ const Year = (data: {
   });
 
   return (
-    <article className="pv3 bt b--black-20">
-      <div className="flex flex-column flex-row-ns">
+    <article className="py-4 border-t border-black/20">
+      <div className="flex flex-col md:flex-row">
         {img_data}
 
-        <div className="w-100 w-60-ns pl3-ns">
-          <h2 className="f3 fw1 mt0 lh-title">
+        <div className="w-full md:w-3/5 md:pl-4">
+          <h2 className="text-2xl font-light mt-0 leading-tight">
             {release} - {year}
           </h2>
-          <ul className="f6 f5-ns lh-copy measure">{change_data}</ul>
+          <ul className="text-sm md:text-base leading-normal max-w-prose">
+            {change_data}
+          </ul>
         </div>
       </div>
     </article>

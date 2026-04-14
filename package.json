@@ -15,10 +15,13 @@
   },
   "dependencies": {
     "@icco/react-common": "^2026.413.4",
+    "@tailwindcss/postcss": "^4.2.2",
     "next": "^16.2.2",
+    "postcss": "^8.5.9",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
-    "sharp": "^0.34.5"
+    "sharp": "^0.34.5",
+    "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
     "@babel/core": "^7.29.0",
