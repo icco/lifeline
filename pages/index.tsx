@@ -1,7 +1,13 @@
 import Year from "components/Year";
 import * as fs from "fs";
+import dynamic from "next/dynamic";
 import Head from "next/head";
 import React from "react";
+
+const Social = dynamic(
+  () => import("@icco/react-common/Social").then((mod) => mod.Social),
+  { ssr: false },
+);
 
 function Home(params: {
   years: { year: number; img?: string; release: string; changes: string[] }[];
@@ -53,6 +59,10 @@ function Home(params: {
           changes={year.changes}
         />
       ))}
+
+      <footer className="py-8 border-t border-black/20">
+        <Social />
+      </footer>
     </div>
   );
 }

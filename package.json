@@ -16,6 +16,7 @@
   "dependencies": {
     "@icco/react-common": "^2026.413.4",
     "@tailwindcss/postcss": "^4.2.2",
+    "daisyui": "5",
     "next": "^16.2.2",
     "postcss": "^8.5.9",
     "react": "^19.2.3",
