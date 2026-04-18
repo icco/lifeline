@@ -25,16 +25,15 @@
     "tailwindcss": "^4.2.2"
   },
   "devDependencies": {
-    "@babel/core": "^7.29.0",
+    "@eslint/compat": "^2.0.0",
     "@types/lodash": "^4.17.24",
     "@types/luxon": "^3.3.1",
     "@types/react": "^19.2.7",
     "@typescript-eslint/eslint-plugin": "^8.50.1",
     "@typescript-eslint/parser": "^8.58.0",
-    "eslint": "^9.39.2",
+    "eslint": "^10.0.0",
     "eslint-config-next": "^16.1.6",
     "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-mdx": "^3.7.0",
     "eslint-plugin-prettier": "^5.5.5",
     "eslint-plugin-simple-import-sort": "^13.0.0",
     "get-graphql-schema": "^2.1.2",

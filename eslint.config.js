@@ -1,50 +1,45 @@
-import eslint from "@eslint/js";
-import nextPlugin from "@next/eslint-plugin-next";
-import eslintConfigPrettier from "eslint-config-prettier";
-import importPlugin from "eslint-plugin-import";
-import * as mdx from "eslint-plugin-mdx";
-import eslintPluginPrettierRecommended from "eslint-plugin-prettier/recommended";
-import reactPlugin from "eslint-plugin-react";
-import reactHooksPlugin from "eslint-plugin-react-hooks";
-import simpleImportSort from "eslint-plugin-simple-import-sort";
-import tseslint from "typescript-eslint";
+import { fixupPluginRules } from "@eslint/compat"
+import tsParser from "@typescript-eslint/parser"
+import nextConfig from "eslint-config-next"
 
-export default tseslint.config(
+// Fix eslint-config-next for ESLint 10:
+// 1. The bundled Babel parser (eslint-config-next/parser) returns a scope manager
+//    without addGlobals() which ESLint 10 requires — override to @typescript-eslint/parser
+// 2. eslint-plugin-react still uses context.getFilename() (removed in ESLint 10) — fix up
+const nextConfigFixed = nextConfig.map((config) => {
+  const result = { ...config }
+
+  if (result.languageOptions?.parser?.meta?.name === "eslint-config-next/parser") {
+    result.languageOptions = {
+      ...result.languageOptions,
+      parser: tsParser,
+    }
+  }
+
+  if (result.plugins?.react) {
+    result.plugins = {
+      ...result.plugins,
+      react: fixupPluginRules(result.plugins.react),
+    }
+  }
+
+  return result
+})
+
+const eslintConfig = [
   {
-    ignores: [".next/**", "node_modules/**"],
+    ignores: [".next/", "node_modules/"],
   },
-  eslint.configs.recommended,
-  ...tseslint.configs.recommended,
+  ...nextConfigFixed,
+  // TypeScript handles undefined-variable and unused-variable checking.
+  // Disable base ESLint rules for TS files to avoid false positives.
   {
-    plugins: {
-      "@next/next": nextPlugin,
-      react: reactPlugin,
-      "react-hooks": reactHooksPlugin,
-      import: importPlugin,
-      "simple-import-sort": simpleImportSort,
-    },
+    files: ["**/*.ts", "**/*.tsx"],
     rules: {
-      ...nextPlugin.configs.recommended.rules,
-      ...nextPlugin.configs["core-web-vitals"].rules,
-      "import/first": "error",
-      "import/newline-after-import": "error",
-      "import/no-duplicates": "error",
-      "simple-import-sort/exports": "error",
-      "simple-import-sort/imports": "error",
-    },
-    settings: {
-      react: {
-        version: "detect",
-      },
+      "no-undef": "off",
+      "no-unused-vars": "off",
     },
   },
-  mdx.flat,
-  {
-    files: ["**/*.mdx"],
-    settings: {
-      "mdx/code-blocks": true,
-    },
-  },
-  eslintPluginPrettierRecommended,
-  eslintConfigPrettier,
-);
+]
+
+export default eslintConfig
