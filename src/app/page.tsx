@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <div className="font-mono max-w-3xl mx-auto p-4">
+      <div className="max-w-3xl mx-auto p-4">
         <section className="mb-8">
           <h1 className="text-3xl font-bold mb-2">Nat Welch</h1>
           <h2 className="text-xl font-semibold mb-4">CHANGELOG.TXT</h2>

@@ -30,7 +30,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en" className={robotoMono.variable} suppressHydrationWarning>
-      <body>
+      <body className="font-mono">
         <ThemeProvider defaultTheme="system" enableSystem>
           <SiteHeader />
           <main>{children}</main>
