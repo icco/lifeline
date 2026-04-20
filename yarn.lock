@@ -255,9 +255,9 @@
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
 "@icco/react-common@^2026.413.4":
-  version "2026.418.3"
-  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.418.3/5c9c4b2d8488b66e3cb500e3a1136551ccc5b6a4#5c9c4b2d8488b66e3cb500e3a1136551ccc5b6a4"
-  integrity sha512-EZd65iLcBfhGIphe3aYb1PtjSr/6tlx+wuP5nVYjSxTekjhlFBEUauiFWxy3VIKp75I9jbIt7AKV7NDQsIVAYA==
+  version "2026.418.4"
+  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.418.4/e956f662653895fb38941198e817f2da9afb4423#e956f662653895fb38941198e817f2da9afb4423"
+  integrity sha512-EbDP2+GzsRa4ay0xGFeVUo7ddM9P1JRWH3lVT3X99LQExJdellEyAAlsjZJ9eh6CdQeq2cVPP5pg1u2u37oY7w==
   dependencies:
     vivus "^0.4.6"
 
