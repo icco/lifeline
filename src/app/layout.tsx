@@ -2,6 +2,7 @@ import "./globals.css"
 
 import { SiteHeader } from "@icco/react-common/SiteHeader"
 import { ThemeProvider } from "@icco/react-common/ThemeProvider"
+import { WebVitals } from "@icco/react-common/WebVitals"
 import type { Metadata, Viewport } from "next"
 import { Roboto_Mono } from "next/font/google"
 
@@ -15,11 +16,29 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://life.natwelch.com"),
   title: "Nat's Lifeline",
   description: "A changelog of the life of Nat Welch",
+  openGraph: {
+    title: "Nat's Lifeline",
+    description: "A changelog of the life of Nat Welch",
+    url: "https://life.natwelch.com",
+    siteName: "Nat's Lifeline",
+    images: [{ url: "/static/img/35.jpg", width: 300, height: 400, alt: "Nat Welch" }],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Nat's Lifeline",
+    description: "A changelog of the life of Nat Welch",
+    images: ["/static/img/35.jpg"],
+  },
+  other: {
+    webmention: "https://webmention.io/life.natwelch.com/webmention",
+    pingback: "https://webmention.io/life.natwelch.com/xmlrpc",
+  },
 }
 
 export const viewport: Viewport = {
   viewportFit: "cover",
-  initialScale: 1.0,
+  initialScale: 1,
   width: "device-width",
 }
 
@@ -33,6 +52,7 @@ export default function RootLayout({
       <body className="font-mono">
         <ThemeProvider defaultTheme="system" enableSystem>
           <SiteHeader />
+          <WebVitals analyticsPath="/analytics/lifeline" />
           <main>{children}</main>
         </ThemeProvider>
       </body>
