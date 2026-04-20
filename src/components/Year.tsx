@@ -17,7 +17,7 @@ const Year = (data: {
           <Image
             width={300}
             height={400}
-            className="block"
+            className="block w-full h-auto"
             src={"/static/" + img}
             alt={`photo of Nat in ${year}`}
           />
@@ -27,7 +27,7 @@ const Year = (data: {
   } else {
     img_data = (
       <div className="md:pr-4 mb-8 md:mb-0 w-full md:w-2/5">
-        <div className="bg-base-300 w-[300px] h-[400px] flex items-center justify-center">
+        <div className="bg-base-300 w-full aspect-[3/4] flex items-center justify-center">
           <span className="text-base-content/30 text-sm">no photo</span>
         </div>
       </div>
