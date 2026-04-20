@@ -21,18 +21,12 @@ export const metadata: Metadata = {
     description: "A changelog of the life of Nat Welch",
     url: "https://life.natwelch.com",
     siteName: "Nat's Lifeline",
-    images: [{ url: "/static/img/35.jpg", width: 300, height: 400, alt: "Nat Welch" }],
     type: "website",
   },
   twitter: {
-    card: "summary_large_image",
+    card: "summary",
     title: "Nat's Lifeline",
     description: "A changelog of the life of Nat Welch",
-    images: ["/static/img/35.jpg"],
-  },
-  other: {
-    webmention: "https://webmention.io/life.natwelch.com/webmention",
-    pingback: "https://webmention.io/life.natwelch.com/xmlrpc",
   },
 }
 
