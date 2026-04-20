@@ -51,7 +51,7 @@ export default function Home() {
 
         {years.map((year) => (
           <Year
-            key={year.release}
+            key={`${year.year}-${year.release}`}
             release={year.release}
             img={year.img}
             year={year.year}

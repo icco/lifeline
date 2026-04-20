@@ -9,7 +9,7 @@ const Year = (data: {
 }): React.ReactElement => {
   const { release, img, year, changes } = data;
 
-  let img_data = <></>;
+  let img_data;
   if (img !== undefined) {
     img_data = (
       <div className="md:pr-4 mb-8 md:mb-0 w-full md:w-2/5 transition-opacity hover:opacity-75">
@@ -22,6 +22,14 @@ const Year = (data: {
             alt={`photo of Nat in ${year}`}
           />
         </a>
+      </div>
+    );
+  } else {
+    img_data = (
+      <div className="md:pr-4 mb-8 md:mb-0 w-full md:w-2/5">
+        <div className="bg-base-300 w-[300px] h-[400px] flex items-center justify-center">
+          <span className="text-base-content/30 text-sm">no photo</span>
+        </div>
       </div>
     );
   }
