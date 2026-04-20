@@ -1,25 +1,19 @@
 # Lifeline
 
-This originally started as a project to make a JSON timeline of my life. I basically wanted to scroll through my life. After talking with @dmpatierno though, I have decided that having a life changelog would be far more interesting. For now I'm going to store the data in JSON, but in reality, having it as Markdown or some other simple markup format would make more sense.
+A changelog of my life. For every year, I include a photo and a list of significant events since the last "release". Data is stored in [`public/static/data.json`](public/static/data.json).
 
-This is hosted at [life.natwelch.com](http://life.natwelch.com) thanks to Github Pages.
+Hosted at [lifeline.natwelch.com](https://lifeline.natwelch.com).
 
-## Inspiration
+## Stack
 
-- <http://dev.opera.com/articles/view/css-only-scrollable-timeline/>
-- <http://dustincurtis.com/about.html>
-- <http://www.google.com/tenthbirthday/>
-- <http://tutorialzine.com/2010/01/advanced-event-timeline-with-php-css-jquery/>
-- <http://www.simile-widgets.org/timeline/>
-- <http://feltron.com/>
-- <http://en.wikipedia.org/wiki/Changelog>
-- <http://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html>
-- <https://github.com/Gawen/life>
+- [Next.js](https://nextjs.org) (App Router)
+- [Tailwind CSS v4](https://tailwindcss.com) + [DaisyUI](https://daisyui.com)
+- [`@icco/react-common`](https://github.com/icco/react-common) for shared layout components
 
-## TODO
+## Development
 
-- Put link to code in footer
-- Add a photo for every year
-- Fix some spelling errors
-- order existing bullet points by date
-- Add missing years
+```bash
+yarn dev    # runs on http://localhost:8080
+yarn build
+yarn start
+```
