@@ -10,6 +10,18 @@ Hosted at [life.natwelch.com](https://life.natwelch.com).
 - [Tailwind CSS v4](https://tailwindcss.com) + [DaisyUI](https://daisyui.com)
 - [`@icco/react-common`](https://github.com/icco/react-common) for shared layout components
 
+## Inspiration
+
+- <http://dev.opera.com/articles/view/css-only-scrollable-timeline/>
+- <http://dustincurtis.com/about.html>
+- <http://www.google.com/tenthbirthday/>
+- <http://tutorialzine.com/2010/01/advanced-event-timeline-with-php-css-jquery/>
+- <http://www.simile-widgets.org/timeline/>
+- <http://feltron.com/>
+- <http://en.wikipedia.org/wiki/Changelog>
+- <http://www.chiark.greenend.org.uk/~sgtatham/putty/changes.html>
+- <https://github.com/Gawen/life>
+
 ## Development
 
 ```bash
