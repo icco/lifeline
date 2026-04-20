@@ -2,7 +2,7 @@
 
 A changelog of my life. For every year, I include a photo and a list of significant events since the last "release". Data is stored in [`public/static/data.json`](public/static/data.json).
 
-Hosted at [lifeline.natwelch.com](https://lifeline.natwelch.com).
+Hosted at [life.natwelch.com](https://life.natwelch.com).
 
 ## Stack
 
