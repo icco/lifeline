@@ -1,10 +1,9 @@
 import "./globals.css"
 
+import { SiteHeader } from "@icco/react-common/SiteHeader"
 import { ThemeProvider } from "@icco/react-common/ThemeProvider"
 import type { Metadata, Viewport } from "next"
 import { Roboto_Mono } from "next/font/google"
-
-import { SmallHeader } from "@/components/SmallHeader"
 
 const robotoMono = Roboto_Mono({
   subsets: ["latin"],
@@ -33,7 +32,7 @@ export default function RootLayout({
     <html lang="en" className={robotoMono.variable} suppressHydrationWarning>
       <body>
         <ThemeProvider defaultTheme="system" enableSystem>
-          <SmallHeader />
+          <SiteHeader />
           <main>{children}</main>
         </ThemeProvider>
       </body>
