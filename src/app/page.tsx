@@ -1,7 +1,7 @@
 import * as fs from "fs"
 
-import Footer from "components/Footer"
-import Year from "components/Year"
+import Footer from "@/components/Footer"
+import Year from "@/components/Year"
 
 export const metadata = {
   title: "Nat's Lifeline",

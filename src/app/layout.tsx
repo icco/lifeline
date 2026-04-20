@@ -4,7 +4,7 @@ import { ThemeProvider } from "@icco/react-common/ThemeProvider"
 import type { Metadata, Viewport } from "next"
 import { Roboto_Mono } from "next/font/google"
 
-import { SmallHeader } from "components/SmallHeader"
+import { SmallHeader } from "@/components/SmallHeader"
 
 const robotoMono = Roboto_Mono({
   subsets: ["latin"],

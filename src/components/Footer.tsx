@@ -4,6 +4,8 @@ const Footer = () => (
   <CommonFooter
     startYear={2011}
     sourceRepo="https://github.com/icco/lifeline"
+    showRecurseRing={false}
+    showXXIIVVRing={false}
   />
 )
 
