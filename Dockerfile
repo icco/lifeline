@@ -18,6 +18,9 @@ RUN rm -f .npmrc && yarn build
 
 # Production image, copy all the files and run next
 FROM node:25-alpine AS runner
+
+LABEL org.opencontainers.image.source=https://github.com/icco/lifeline
+LABEL org.opencontainers.image.description="A page to show my life."
 WORKDIR /app
 
 ENV NODE_ENV=production
