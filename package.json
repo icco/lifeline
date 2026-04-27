@@ -15,12 +15,11 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@icco/react-common": "^2026.413.4",
+    "@icco/react-common": "^2026.427.2",
     "@tailwindcss/postcss": "^4.2.2",
     "daisyui": "^5.0.0",
     "jsdom": "^29.0.2",
     "next": "^16.2.2",
-    "next-themes": "^0.4.6",
     "postcss": "^8.5.9",
     "react": "^19.2.3",
     "react-dom": "^19.2.3",
