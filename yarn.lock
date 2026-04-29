@@ -336,10 +336,10 @@
   resolved "https://registry.yarnpkg.com/@humanwhocodes/retry/-/retry-0.4.3.tgz#c2b9d2e374ee62c586d3adbea87199b1d7a7a6ba"
   integrity sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==
 
-"@icco/react-common@^2026.427.2":
-  version "2026.427.2"
-  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.427.2/bc60677c42a27008f22b42596b7b8971caf08d00#bc60677c42a27008f22b42596b7b8971caf08d00"
-  integrity sha512-DdHo3ESOzVweuEAHi5HVfyp0AR7PdA9BB0lZb6fZCsGhu3HtflmQmhZ5FzA0jHnGF1QD0Hlz4MgJi+156zQD9g==
+"@icco/react-common@^2026.429.1":
+  version "2026.429.1"
+  resolved "https://npm.pkg.github.com/download/@icco/react-common/2026.429.1/fdb31fe5f7a573a92f6975d06919772c21f2afbc#fdb31fe5f7a573a92f6975d06919772c21f2afbc"
+  integrity sha512-pxWSYtr0Kf3JEfdcqts5OTL4gWLsqlJHWMeYTYW464YHjsSLPMsfnemZqU+mT9j77emD/+2toUgj1BemazRKbQ==
   dependencies:
     "@wrksz/themes" "^0.9.0"
     vivus "^0.4.6"
@@ -1763,7 +1763,7 @@ escape-string-regexp@^4.0.0:
   resolved "https://registry.yarnpkg.com/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz#14ba83a5d373e3d311e5afca29cf5bfad965bf34"
   integrity sha512-TtpcNJ3XAzx3Gq8sWRzJaVajRs0uVxA2YAkdb1jm2YkPz4G6egUFAyA3n5vtEIZefPk5Wa4UXbKuS5fKkJWdgA==
 
-eslint-config-next@^16.1.6:
+eslint-config-next@^16.2.4:
   version "16.2.4"
   resolved "https://registry.yarnpkg.com/eslint-config-next/-/eslint-config-next-16.2.4.tgz#ed9f106bb474736e4f7c53c998321fffdedbcde6"
   integrity sha512-A6ekXYFj/YQxBPMl45g3e+U8zJo+X2+ZQwcz34pPKjpc/3S4roBA2Rd9xWB4FKuSxhofo1/95WjzmUY+wHrOhg==
@@ -2856,7 +2856,7 @@ neo-async@^2.6.2:
   resolved "https://registry.yarnpkg.com/neo-async/-/neo-async-2.6.2.tgz#b4aafb93e3aeb2d8174ca53cf163ab7d7308305f"
   integrity sha512-Yd3UES5mWCSqR+qNT93S3UoYUkqAZ9lLg8a7g9rimsWmYGK8cVToA4/sF3RrshdyV3sAGMXVUmpMYOw+dLpOuw==
 
-next@^16.2.2:
+next@^16.2.4:
   version "16.2.4"
   resolved "https://registry.yarnpkg.com/next/-/next-16.2.4.tgz#b1f708a283052e8ccb86ef16001d69e558e6ef5f"
   integrity sha512-kPvz56wF5frc+FxlHI5qnklCzbq53HTwORaWBGdT0vNoKh1Aya9XC8aPauH4NJxqtzbWsS5mAbctm4cr+EkQ2Q==
