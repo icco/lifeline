@@ -44,7 +44,7 @@ export default function RootLayout({
   return (
     <html lang="en" className={robotoMono.variable} suppressHydrationWarning>
       <body className="font-mono">
-        <ThemeProvider defaultTheme="system" enableSystem>
+        <ThemeProvider>
           <SiteHeader />
           <WebVitals analyticsPath="/analytics/lifeline" />
           <main>{children}</main>
