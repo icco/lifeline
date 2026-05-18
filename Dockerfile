@@ -1,5 +1,5 @@
 # Install dependencies only when needed
-FROM node:25-alpine AS deps
+FROM node:26-alpine AS deps
 
 # Check https://github.com/nodejs/docker-node/tree/b4117f9333da4138b03a546ec926ef50a31506c3#nodealpine to understand why libc6-compat might be needed.
 RUN apk add --no-cache libc6-compat
@@ -10,14 +10,14 @@ RUN --mount=type=secret,id=GITHUB_TOKEN \
     yarn install --frozen-lockfile
 
 # Rebuild the source code only when needed
-FROM node:25-alpine AS builder
+FROM node:26-alpine AS builder
 WORKDIR /app
 COPY . .
 COPY --from=deps /app/node_modules ./node_modules
 RUN rm -f .npmrc && yarn build
 
 # Production image, copy all the files and run next
-FROM node:25-alpine AS runner
+FROM node:26-alpine AS runner
 
 LABEL org.opencontainers.image.source=https://github.com/icco/lifeline
 LABEL org.opencontainers.image.description="A page to show my life."
