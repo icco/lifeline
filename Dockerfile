@@ -16,7 +16,7 @@ RUN npm install -g pnpm@11.2.2
 WORKDIR /app
 COPY . .
 COPY --from=deps /app/node_modules ./node_modules
-RUN rm -f .npmrc && pnpm build
+RUN pnpm build
 
 # Production image, copy all the files and run next
 FROM node:26-alpine AS runner
@@ -36,6 +36,7 @@ COPY --from=builder /app/public ./public
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/node_modules ./node_modules
 COPY --from=builder /app/package.json ./package.json
+COPY --from=builder /app/.npmrc ./.npmrc
 
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
