@@ -5,7 +5,7 @@ FROM node:26-alpine AS deps
 RUN apk add --no-cache libc6-compat
 RUN npm install -g pnpm
 WORKDIR /app
-COPY package.json pnpm-lock.yaml .npmrc ./
+COPY package.json pnpm-lock.yaml pnpm-workspace.yaml .npmrc ./
 RUN --mount=type=secret,id=GITHUB_TOKEN \
     GITHUB_TOKEN=$(cat /run/secrets/GITHUB_TOKEN) \
     pnpm install --frozen-lockfile
