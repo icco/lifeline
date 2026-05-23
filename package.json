@@ -7,6 +7,10 @@
   "author": "Nat Welch <nat@natwelch.com>",
   "license": "MIT",
   "private": true,
+  "packageManager": "pnpm@11.2.2",
+  "engines": {
+    "node": ">=26"
+  },
   "scripts": {
     "dev": "eslint --fix . && next dev -p 8080",
     "lint": "eslint --fix .",
@@ -15,32 +19,25 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@icco/react-common": "^2026.510.2",
-    "@tailwindcss/postcss": "^4.2.2",
-    "daisyui": "^5.0.0",
-    "jsdom": "^29.0.2",
-    "next": "^16.2.4",
-    "postcss": "^8.5.14",
-    "react": "^19.2.3",
-    "react-dom": "^19.2.3",
+    "@icco/react-common": "^2026.10518.1",
+    "@tailwindcss/postcss": "^4.3.0",
+    "daisyui": "^5.5.20",
+    "jsdom": "^29.1.1",
+    "next": "^16.2.6",
+    "postcss": "^8.5.15",
+    "react": "^19.2.6",
+    "react-dom": "^19.2.6",
     "sharp": "^0.34.5",
-    "tailwindcss": "^4.2.2"
+    "tailwindcss": "^4.3.0"
   },
   "devDependencies": {
-    "@eslint/compat": "^2.0.0",
-    "@types/lodash": "^4.17.24",
-    "@types/luxon": "^3.3.1",
-    "@types/react": "^19.2.7",
-    "@typescript-eslint/eslint-plugin": "^8.59.3",
-    "@typescript-eslint/parser": "^8.59.3",
-    "eslint": "^10.0.0",
-    "eslint-config-next": "^16.2.4",
-    "eslint-config-prettier": "^10.1.8",
-    "eslint-plugin-prettier": "^5.5.5",
-    "eslint-plugin-simple-import-sort": "^13.0.0",
-    "get-graphql-schema": "^2.1.2",
-    "prettier": "^3.8.1",
-    "typescript": "^6.0.0",
-    "webpack": "^5.105.4"
+    "@eslint/compat": "^2.1.0",
+    "@types/react": "^19.2.15",
+    "@typescript-eslint/eslint-plugin": "^8.59.4",
+    "@typescript-eslint/parser": "^8.59.4",
+    "eslint": "^10.4.0",
+    "eslint-config-next": "^16.2.6",
+    "typescript": "^6.0.3",
+    "webpack": "^5.107.1"
   }
 }
