@@ -20,7 +20,6 @@ RUN pnpm build
 
 # Production image, copy all the files and run next
 FROM node:26-alpine AS runner
-RUN npm install -g pnpm@11.2.2
 
 LABEL org.opencontainers.image.source=https://github.com/icco/lifeline
 LABEL org.opencontainers.image.description="A page to show my life."
@@ -28,21 +27,17 @@ WORKDIR /app
 
 ENV NODE_ENV=production
 ENV PORT=8080
-
-# You only need to copy next.config.js if you are NOT using the default configuration
-#COPY --from=builder /app/next.config.js ./
-
-COPY --from=builder /app/public ./public
-COPY --from=builder /app/.next ./.next
-COPY --from=builder /app/node_modules ./node_modules
-COPY --from=builder /app/package.json ./package.json
-COPY --from=builder /app/.npmrc ./.npmrc
+ENV HOSTNAME="0.0.0.0"
 
 RUN addgroup -g 1001 -S nodejs
 RUN adduser -S nextjs -u 1001
-RUN chown -R nextjs:nodejs /app/.next
+
+COPY --from=builder /app/public ./public
+COPY --from=builder --chown=nextjs:nodejs /app/.next/standalone ./
+COPY --from=builder --chown=nextjs:nodejs /app/.next/static ./.next/static
+
 USER nextjs
 
 EXPOSE 8080
 
-CMD ["pnpm", "start"]
+CMD ["node", "server.js"]
