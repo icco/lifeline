@@ -26,8 +26,8 @@
     "next": "^16.2.10",
     "next-secure-headers": "^2.2.0",
     "postcss": "^8.5.19",
-    "react": "^19.2.6",
-    "react-dom": "^19.2.6",
+    "react": "^19.2.7",
+    "react-dom": "^19.2.7",
     "sharp": "^0.34.5",
     "tailwindcss": "^4.3.3"
   },
