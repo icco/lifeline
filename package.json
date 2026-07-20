@@ -19,7 +19,7 @@
   },
   "dependencies": {
     "@heroicons/react": "^2.2.0",
-    "@icco/react-common": "^2026.10713.4",
+    "@icco/react-common": "^2026.10720.3",
     "@tailwindcss/postcss": "^4.3.3",
     "daisyui": "^5.6.18",
     "jsdom": "^29.1.1",
