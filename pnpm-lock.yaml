@@ -30,8 +30,8 @@ importers:
         specifier: ^2.2.0
         version: 2.2.0
       postcss:
-        specifier: ^8.5.15
-        version: 8.5.15
+        specifier: ^8.5.19
+        version: 8.5.19
       react:
         specifier: ^19.2.6
         version: 19.2.6
@@ -68,7 +68,7 @@ importers:
         version: 6.0.3
       webpack:
         specifier: ^5.107.1
-        version: 5.107.1(postcss@8.5.15)
+        version: 5.107.1(postcss@8.5.19)
 
 packages:
 
@@ -1874,11 +1874,6 @@ packages:
   ms@2.1.3:
     resolution: {integrity: sha512-6FlzubTLZG3J2a/NVCAleEhjzq5oxgHyaCU9yYXvcLsvoVaHJq/s5xXI6/XXP6tz7R9xAOtHnSO/tXtF3WRTlA==}
 
-  nanoid@3.3.12:
-    resolution: {integrity: sha512-ZB9RH/39qpq5Vu6Y+NmUaFhQR6pp+M2Xt76XBnEwDaGcVAqhlvxrl3B2bKS5D3NH3QR76v3aSrKaF/Kiy7lEtQ==}
-    engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
-    hasBin: true
-
   nanoid@3.3.16:
     resolution: {integrity: sha512-bzlKTyNJ7+LdGIIwy8ijFpIqEQIvafahV7eYykJ8Cvh42EdJeODoJ6gUJXpQJvej1BddH8OqTXZNE/KfbWAu8Q==}
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
@@ -2011,10 +2006,6 @@ packages:
 
   postcss@8.4.31:
     resolution: {integrity: sha512-PS08Iboia9mts/2ygV3eLpY5ghnUcfLV/EXTOW1E2qYxJKGGBUtNjN76FYHnMs36RmARn41bC0AZmn+rR0OVpQ==}
-    engines: {node: ^10 || ^12 || >=14}
-
-  postcss@8.5.15:
-    resolution: {integrity: sha512-FfR8sjd4em2T6fb3I2MwAJU7HWVMr9zba+enmQeeWFfCbm+UOC/0X4DS8XtpUTMwWMGbjKYP7xjfNekzyGmB3A==}
     engines: {node: ^10 || ^12 || >=14}
 
   postcss@8.5.19:
@@ -4372,8 +4363,6 @@ snapshots:
 
   ms@2.1.3: {}
 
-  nanoid@3.3.12: {}
-
   nanoid@3.3.16: {}
 
   napi-postinstall@0.3.4: {}
@@ -4505,12 +4494,6 @@ snapshots:
   postcss@8.4.31:
     dependencies:
       nanoid: 3.3.16
-      picocolors: 1.1.1
-      source-map-js: 1.2.1
-
-  postcss@8.5.15:
-    dependencies:
-      nanoid: 3.3.12
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
@@ -4793,15 +4776,15 @@ snapshots:
 
   tapable@2.3.3: {}
 
-  terser-webpack-plugin@5.6.0(postcss@8.5.15)(webpack@5.107.1(postcss@8.5.15)):
+  terser-webpack-plugin@5.6.0(postcss@8.5.19)(webpack@5.107.1(postcss@8.5.19)):
     dependencies:
       '@jridgewell/trace-mapping': 0.3.31
       jest-worker: 27.5.1
       schema-utils: 4.3.3
       terser: 5.48.0
-      webpack: 5.107.1(postcss@8.5.15)
+      webpack: 5.107.1(postcss@8.5.19)
     optionalDependencies:
-      postcss: 8.5.15
+      postcss: 8.5.19
 
   terser@5.48.0:
     dependencies:
@@ -4970,7 +4953,7 @@ snapshots:
 
   webpack-sources@3.5.0: {}
 
-  webpack@5.107.1(postcss@8.5.15):
+  webpack@5.107.1(postcss@8.5.19):
     dependencies:
       '@types/estree': 1.0.9
       '@types/json-schema': 7.0.15
@@ -4992,7 +4975,7 @@ snapshots:
       neo-async: 2.6.2
       schema-utils: 4.3.3
       tapable: 2.3.3
-      terser-webpack-plugin: 5.6.0(postcss@8.5.15)(webpack@5.107.1(postcss@8.5.15))
+      terser-webpack-plugin: 5.6.0(postcss@8.5.19)(webpack@5.107.1(postcss@8.5.19))
       watchpack: 2.5.1
       webpack-sources: 3.5.0
     transitivePeerDependencies:
