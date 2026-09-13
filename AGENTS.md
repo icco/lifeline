@@ -16,7 +16,7 @@ Use pnpm:
 
 ## Architecture & Conventions
 
-- App/pages structure using Next.js with React components.
+- Next.js App Router structure under `src/app`, with React components under `src/components`.
 - UI components styled with Tailwind CSS and daisyUI (`@icco/react-common`).
 - PR titles and commits must follow Conventional Commits with lowercase subjects.
 - Ensure `pnpm lint` and `pnpm build` pass before opening PRs.
