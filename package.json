@@ -21,7 +21,7 @@
     "@heroicons/react": "^2.2.0",
     "@icco/react-common": "^2026.10720.3",
     "@tailwindcss/postcss": "^4.3.3",
-    "daisyui": "^5.6.18",
+    "daisyui": "^5.7.37",
     "jsdom": "^30.0.1",
     "next": "^16.2.10",
     "next-secure-headers": "^2.2.0",
