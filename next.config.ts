@@ -51,7 +51,6 @@ const nextConfig: NextConfig = {
                 "'self'",
                 "data:",
                 "https://*.natwelch.com",
-                "https://icco.imgix.net",
               ],
               scriptSrc: [
                 "'self'",
