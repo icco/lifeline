@@ -21,6 +21,7 @@
     "@heroicons/react": "^2.2.0",
     "@icco/react-common": "^2026.11104.1",
     "@tailwindcss/postcss": "^4.3.5",
+    "@vercel/otel": "^2.3.0",
     "daisyui": "^5.7.50",
     "jsdom": "^31.0.0",
     "next": "^16.4.5",
