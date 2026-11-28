@@ -166,12 +166,9 @@ importers:
 
   .:
     dependencies:
-      '@heroicons/react':
-        specifier: ^2.2.0
-        version: 2.2.0(react@19.3.1)
       '@icco/react-common':
-        specifier: ^2026.11115.1
-        version: 2026.11115.1(@heroicons/react@2.2.0(react@19.3.1))(jsdom@31.0.1)(next@16.4.6(@babel/core@7.29.7)(@opentelemetry/api@1.10.0)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@7.0.2)
+        specifier: ^2026.11128.2
+        version: 2026.11128.2(@types/react@19.3.0)(jsdom@31.0.1)(next@16.4.6(@babel/core@7.29.7)(@opentelemetry/api@1.10.0)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@7.0.2)
       '@opentelemetry/api':
         specifier: ~1.10.0
         version: 1.10.0
@@ -376,11 +373,6 @@ packages:
       '@noble/hashes':
         optional: true
 
-  '@heroicons/react@2.2.0':
-    resolution: {integrity: sha512-LMcepvRaS9LYHJGsF0zzmgKCUim/X3N/DQKc4jepAXJ7l8QxJ1PmxJzqplF2Z3FE4PqBAIGyJAQ/w4B5dsqbtQ==}
-    peerDependencies:
-      react: '>= 16 || ^19.0.0-rc'
-
   '@humanfs/core@0.19.2':
     resolution: {integrity: sha512-UhXNm+CFMWcbChXywFwkmhqjs3PRCmcSa/hfBgLIb7oQ5HNb1wS0icWsGtSAUNgefHeI+eBrA8I1fxmbHsGdvA==}
     engines: {node: '>=18.18.0'}
@@ -401,10 +393,9 @@ packages:
     resolution: {integrity: sha512-bV0Tgo9K4hfPCek+aMAn81RppFKv2ySDQeMoSZuvTASywNTnVJCArCZE2FWqpvIatKu7VMRLWlR1EazvVhDyhQ==}
     engines: {node: '>=18.18'}
 
-  '@icco/react-common@2026.11115.1':
-    resolution: {integrity: sha512-2hXOe+QZFuZ69Q5ylCyCGo0GarCrRkHK2HmMsubMG0hr8tQr8ZOHsePwk3DKkGnBmfh46NmO4Ozal6c/3g6/Zw==, tarball: https://npm.pkg.github.com/download/@icco/react-common/2026.11115.1/f58e143d95d407060e138fe5ff5694a9052ec88b}
+  '@icco/react-common@2026.11128.2':
+    resolution: {integrity: sha512-ANJngfOzvT9HosYX/MJhkLfuzRsGcoDe0oF5X7L+Qq8fWaQHgIi8JspHU+xh0CF0xeGVeXIPz8imsNS20D12sg==, tarball: https://npm.pkg.github.com/download/@icco/react-common/2026.11128.2/5b73f67bc7cf36bc5e0ed26ab7ab82ebe314506a}
     peerDependencies:
-      '@heroicons/react': ^2.0.0
       jsdom: '>=20.0.0'
       next: '>=16.0.0'
       react: ^18.0.0 || ^19.0.0
@@ -2034,6 +2025,15 @@ packages:
   lru-cache@5.1.1:
     resolution: {integrity: sha512-KpNARQA3Iwv+jTA0utUVVbrh+Jlrr1Fv0e56GGzAFOXN7dk/FviaDW8LHmK52DlcH4WP2n6gI8vN1aesBFgo9w==}
 
+  lucide-react@1.82.0:
+    resolution: {integrity: sha512-6jSApJxVZnyOGO5q7ygxiaVmzt87OtkfzpU5aD14ph32W78hBtmwEkVj2ehGyhfEynSM6TEEnFhPq24QhSOz6g==}
+    peerDependencies:
+      '@types/react': '*'
+      react: ^16.5.1 || ^17.0.0 || ^18.0.0 || ^19.0.0
+    peerDependenciesMeta:
+      '@types/react':
+        optional: true
+
   magic-string@1.4.5:
     resolution: {integrity: sha512-oLLC2+YvQUfAa+vxoufE/yc1icb87M9iXIRqAoR/2EhE/8cb3SF/+Gi0c2By1B+5Vz2e2vQtUvHiu1+63Znh+w==}
 
@@ -2732,10 +2732,6 @@ snapshots:
 
   '@exodus/bytes@1.16.0': {}
 
-  '@heroicons/react@2.2.0(react@19.3.1)':
-    dependencies:
-      react: 19.3.1
-
   '@humanfs/core@0.19.2':
     dependencies:
       '@humanfs/types': 0.15.0
@@ -2752,16 +2748,17 @@ snapshots:
 
   '@humanwhocodes/retry@0.4.3': {}
 
-  '@icco/react-common@2026.11115.1(@heroicons/react@2.2.0(react@19.3.1))(jsdom@31.0.1)(next@16.4.6(@babel/core@7.29.7)(@opentelemetry/api@1.10.0)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@7.0.2)':
+  '@icco/react-common@2026.11128.2(@types/react@19.3.0)(jsdom@31.0.1)(next@16.4.6(@babel/core@7.29.7)(@opentelemetry/api@1.10.0)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@7.0.2)':
     dependencies:
-      '@heroicons/react': 2.2.0(react@19.3.1)
       '@wrksz/themes': 2.1.1(next@16.4.6(@babel/core@7.29.7)(@opentelemetry/api@1.10.0)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1))(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(typescript@7.0.2)
       jsdom: 31.0.1
+      lucide-react: 1.82.0(@types/react@19.3.0)(react@19.3.1)
       next: 16.4.6(@babel/core@7.29.7)(@opentelemetry/api@1.10.0)(@types/node@26.6.6)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)
       react: 19.3.1
       react-dom: 19.3.1(react@19.3.1)
       vivus: 0.4.6
     transitivePeerDependencies:
+      - '@types/react'
       - typescript
 
   '@img/colour@1.1.0': {}
@@ -4399,6 +4396,12 @@ snapshots:
   lru-cache@5.1.1:
     dependencies:
       yallist: 3.1.1
+
+  lucide-react@1.82.0(@types/react@19.3.0)(react@19.3.1):
+    dependencies:
+      react: 19.3.1
+    optionalDependencies:
+      '@types/react': 19.3.0
 
   magic-string@1.4.5:
     dependencies:
