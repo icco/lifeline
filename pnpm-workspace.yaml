@@ -2,5 +2,4 @@ allowBuilds:
   sharp: true
   unrs-resolver: true
 minimumReleaseAgeExclude:
-  - '@icco/react-common'
   - '@icco/*'
